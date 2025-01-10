@@ -3,12 +3,13 @@
 
 <img src="https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project2_portada_influencer.png" width="500" height="600" />
 
-Image from [storyset](https://storyset.com/search?q=influencer)
+Image from [storyset](https://storyset.com/search?q=video%20influencer)
 
 ## Table Of Contents
 
 - [Executive Summary](#executive-summary)
   - [Primary Goal](#primary-goal)
+  - [Solution](#solution)
   - [Key Findings](#key-findings)
   - [Recommendations](#recommendations)
 - [Introduction](#introduction)
@@ -28,32 +29,32 @@ Image from [storyset](https://storyset.com/search?q=influencer)
 ---
 ## Executive Summary
 ### Primary Goal
-The goal is to identify the top YouTubers from Mexico in 2024 to determine which influencers would be best suited for running successful marketing campaigns throughout the rest of the year.
+Identify the top YouTubers from Mexico in 2024 to determine which influencers would be best suited for running successful marketing campaigns throughout the rest of the year.
 
 ### Solution
-
+Develop a dashboard to offer insights into the top Mexican YouTubers in 2024, showcasing their ** subscriber count, total views, total videos**, and **engagement metrics**. This tool will support the marketing team in making informed decisions about which YouTubers to collaborate with for their campaigns
 
 
 ### Key Findings
-
+-
+-
+-
 
 ### Recommendations
-
-- __Targeted retention programmes:__ Implement specific retention initiatives for departments with high turnover, such as Sales.
-- __Employee Satisfaction Initiatives:__ Enhance employee satisfaction through recognition programs, flexible work arrangements, and improved communication.
-- __Managerial Development:__ Provide training and support to managers to improve their leadership skills and create a positive work environment.
-- __Compensation and Benefits Review:__ Regularly review compensation and benefits packages to ensure they remain competitive.
-
-By implementing these recommendations, Atlas Labs can significantly reduce employee turnover, improve morale, and enhance overall organisational performance.
+-
+-
+-
 
 ---
 
 ## Introduction
 
 ### Business Problem
-Atlas Labs is facing a significant challenge with employee turnover, which is negatively impacting productivity, morale, and the bottom line. Understanding the underlying causes of attrition is crucial for developing effective retention strategies.
+The marketing team needs to identify and collaborate with the most influential Mexican YouTubers to maximise the effectiveness of their marketing campaigns. Currently, they lack a comprehensive and easily accessible tool that provides insights into key metrics such as subscriber count, total views, total videos, and engagement metrics. This gap hinders their ability to make informed decisions about which YouTubers to partner with for optimal campaign performance
 
 ### Goals
-1. Identify the primary factors contributing to employee turnover.
-2. Develop targeted retention strategies to address these factors.
-3. Improve overall employee satisfaction and engagement.
+1. Develop an Interactive Dashboard: Create a user-friendly dashboard using Power BI to visualise data on the top Mexican YouTubers in 2024.
+2. Data Collection and Integration: Gather comprehensive data on subscriber counts, total views, total videos, and engagement metrics for the top YouTubers in Mexico.
+3. Insight Generation: Analyse the collected data to identify trends and patterns among the top YouTubers.
+4. Support Informed Decision-Making: Equip the marketing team with actionable insights to identify the best YouTubers for collaboration. 
+5. Customisable Features: Allow for customisable views and filters within the dashboard to cater to specific needs and preferences of the marketing team.
