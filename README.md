@@ -73,11 +73,10 @@ The marketing team needs to identify and collaborate with the most influential M
 ## Methodology
 
 ### Data source
-
-We need data on the top Mexican YouTubers in 2024 that includes their
+Data of the top Mexican YouTubers in 2024 includes their:
 - Channel name
 - Total subscribers
 - Total views
 - Total videos uploaded
 
-The data is sourced from a [Kaggle](https://www.kaggle.com/datasets/bhavyadhingra00020/top-100-social-media-influencers-2024-countrywise?resource=download) dataset.
+Data source from [Kaggle](https://www.kaggle.com/datasets/bhavyadhingra00020/top-100-social-media-influencers-2024-countrywise?resource=download). To see the csv file just click [here](https://github.com/alejandralopezgalan/top_100_youtubers_mex/blob/main/youtube_data_mexico.csv)
