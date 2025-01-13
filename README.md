@@ -79,4 +79,8 @@ Data of the top Mexican YouTubers in 2024 includes their:
 - Total views
 - Total videos uploaded
 
-Data source from [Kaggle](https://www.kaggle.com/datasets/bhavyadhingra00020/top-100-social-media-influencers-2024-countrywise?resource=download). To see the csv file just click [here](https://github.com/alejandralopezgalan/top_100_youtubers_mex/blob/main/youtube_data_mexico.csv)
+Data source from [Kaggle](https://www.kaggle.com/datasets/bhavyadhingra00020/top-100-social-media-influencers-2024-countrywise?resource=download). To see the csv file just click [here](https://github.com/alejandralopezgalan/top_100_youtubers_mex/blob/main/youtube_data_mexico.csv).
+
+Displayed below is a screenshot of a portion of the data presented in Excel
+![Rscreenshot_data](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project2_kaggle_data_original.png)
+
