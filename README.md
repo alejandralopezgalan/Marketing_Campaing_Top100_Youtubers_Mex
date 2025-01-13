@@ -27,13 +27,12 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
   - [Goals](#goals)
  - [Methodology](#methodology)
    - [Data Source](#data-source)
-    - [Tools and Techniques](#tools-and-techniques)
-    - [Data Understanding](#data-understanding)
-    - [Data Cleaning](#data-cleaning)
-    - [Data Transformation](#data-transformation)
-    - [DAX measures](#dax-measures)
-    - [Data Analysis](#data-analysis)
-    - [Data Visualisation](#data-visualisation)
+   - [Tools](#tools)
+   - [Data Cleaning](#data-cleaning)
+   - [Data Transformation](#data-transformation)
+   - [DAX measures](#dax-measures)
+   - [Data Analysis](#data-analysis)
+   - [Data Visualisation](#data-visualisation)
 - [Results and Implications](#results-and-implications)
 
 ---
@@ -80,6 +79,14 @@ Data of the top Mexican YouTubers in 2024 includes their:
 - Total videos uploaded
 
 Data source from [Kaggle](https://www.kaggle.com/datasets/bhavyadhingra00020/top-100-social-media-influencers-2024-countrywise?resource=download). To see the csv file just click [here](https://github.com/alejandralopezgalan/top_100_youtubers_mex/blob/main/youtube_data_mexico.csv).
+
+### Tools
+- Excel to explore the data
+- PostgreSQL to clean, test, and analyse the data
+- Power BI to visualise the data via interactive dashboards
+- GitHub to host the project documentation and version control
+
+### Data Cleaning
 
 Displayed below is a screenshot of a portion of the data presented in Excel
 ![Rscreenshot_data](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project2_kaggle_data_original.png)
