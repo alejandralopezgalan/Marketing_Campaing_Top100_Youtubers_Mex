@@ -41,7 +41,7 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
 Identify the top YouTubers from Mexico in 2024 to determine which influencers would be best suited for running successful marketing campaigns throughout the rest of the year.
 
 ### Solution
-Develop a dashboard to offer insights into the top Mexican YouTubers in 2024, showcasing their ** subscriber count, total views, total videos**, and **engagement metrics**. This tool will support the marketing team in making informed decisions about which YouTubers to collaborate with for their campaigns
+Develop a dashboard to offer insights into the top Mexican YouTubers in 2024, showcasing their **subscriber count, total views, total videos**, and **engagement metrics**. This tool will support the marketing team in making informed decisions about which YouTubers to collaborate with for their campaigns
 
 
 ### Key Findings
@@ -96,4 +96,13 @@ This dataset provides structured information about the top 100 YouTubers from Me
 ### Data Cleaning
 Displayed below is a screenshot of a portion of the data presented in Excel
 ![Rscreenshot_data](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project2_kaggle_data_original.png)
+
+The objective is to refine our dataset, ensuring it is well-structured and primed for analysis.
+
+Criteria for the cleaned data:
+- Retain only the columns that are pertinent.
+- Ensure all data types are suitable for their respective columns.
+- Verify that no column contains null values, guaranteeing completeness of all records.
+
+After the initial data exploration, I realised that some columns, such as ER, COUNTRY, and TOPIC OF INFLUENCE, are either irrelevant for our analysis or have missing values. Considering our primary goal and the desired solution, the dataset should contain information related to subscriber count, total views, total videos, and engagement metrics. Therefore, we need to extract this information from YouTube to complement our dataset.
 
