@@ -104,5 +104,8 @@ Criteria for the cleaned data:
 - Ensure all data types are suitable for their respective columns.
 - Verify that no column contains null values, guaranteeing completeness of all records.
 
-After the initial data exploration, I realised that some columns, such as ER, COUNTRY, and TOPIC OF INFLUENCE, are either irrelevant for our analysis or have missing values. Considering our primary goal and the desired solution, the dataset should contain information related to subscriber count, total views, total videos, and engagement metrics. Therefore, we need to extract this information from YouTube to complement our dataset.
+After the initial data exploration, I realised that some columns, such as ER, COUNTRY, and TOPIC OF INFLUENCE, are either irrelevant for our analysis or have missing values. Considering our primary goal and the desired solution, the dataset should contain information related to subscriber count, total views, total videos, and engagement metrics. Therefore, we need to extract this information from YouTube to complement our dataset. I use a Python script to extract that information from YouTube.
+
+### Extracting data from YouTube
+I implemented a Python script based on the script Stephen David William [GitHub](https://github.com/sdw-online)
 
