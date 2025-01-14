@@ -109,7 +109,10 @@ After the initial data exploration, I realised that some columns, such as ER, CO
 ### Extracting data from YouTube
 I implemented a Python script based on the script developed by Stephen David William [GitHub]([https://github.com/sdw-online](https://github.com/sdw-online/top_uk_youtubers_2024). To see the script I used, just click [here](assets/script/script_youtube_python.py). 
 
-After runing the script, the dataset has now four additional columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos`
-
-
+After runing the script, the dataset has now four additional columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos` as seen in the following image. However, the script did not extracted data from two Yotubers, which could be related to not recognising the channel ID.
 ![updated_data](assets/img/project2_data_updated.png)
+
+The script output found no data on these two channels, but they actually exist on YouTube. Therefore, I decided to manually enter this data using the information from ABout section of these Youtube channels. I added this information at the end of the table, as I could Excel to sort the channels on their respecting rank, based on the	`total_subscribers`,	`total_views` and `total_videos` later on.
+![script_ouput](assets/img/project2_script_output.png)
+
+
