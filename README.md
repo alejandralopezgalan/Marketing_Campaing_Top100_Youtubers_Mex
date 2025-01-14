@@ -107,5 +107,7 @@ Criteria for the cleaned data:
 After the initial data exploration, I realised that some columns, such as ER, COUNTRY, and TOPIC OF INFLUENCE, are either irrelevant for our analysis or have missing values. Considering our primary goal and the desired solution, the dataset should contain information related to subscriber count, total views, total videos, and engagement metrics. Therefore, we need to extract this information from YouTube to complement our dataset. I use a Python script to extract that information from YouTube.
 
 ### Extracting data from YouTube
-I implemented a Python script based on the script developed by Stephen David William [GitHub]([https://github.com/sdw-online](https://github.com/sdw-online/top_uk_youtubers_2024). To see the script I used, just click [here](assets/script/script_youtube_python.py)
+I implemented a Python script based on the script developed by Stephen David William [GitHub]([https://github.com/sdw-online](https://github.com/sdw-online/top_uk_youtubers_2024). To see the script I used, just click [here](assets/script/script_youtube_python.py). 
+
+After runing the script, the dataset has now four additional columns 
 
