@@ -79,13 +79,13 @@ This dataset provides structured information about the top 100 YouTubers from Me
 
 | Column name | Description | 
 | :--- | :--- |
-| # | The ranking of the YouTuber in the top 100 list |
-| NAME | The name or pseudonym of the YouTuber |
-| FOLLOWERS | The total number of subscribers the influencer has on YouTube |
-| ER | Engagement Rate: The level of interaction that the influencer's content receives from users on social media platforms, expressed as a percentage |
-| COUNTRY | The geographical location or country where the YouTuber is based or primarily operates |
-| TOPIC OF INFLUENCE | The niche or category in which the YouTuber specialises or creates content, such as fashion, beauty, technology, fitness, etc. |
-| POTENTIAL REACH | TThe estimated number of people who could see a YouTube video or campaign from this influencer |
+| `#` | The ranking of the YouTuber in the top 100 list |
+| `NAME` | The name or pseudonym of the YouTuber |
+| `FOLLOWERS` | The total number of subscribers the influencer has on YouTube |
+| `ER` | Engagement Rate: The level of interaction that the influencer's content receives from users on social media platforms, expressed as a percentage |
+| `COUNTRY` | The geographical location or country where the YouTuber is based or primarily operates |
+| `TOPIC OF INFLUENCE` | The niche or category in which the YouTuber specialises or creates content, such as fashion, beauty, technology, fitness, etc. |
+| `POTENTIAL REACH` | TThe estimated number of people who could see a YouTube video or campaign from this influencer |
 
 ### Tools
 - Excel: To explore the data
@@ -109,5 +109,7 @@ After the initial data exploration, I realised that some columns, such as ER, CO
 ### Extracting data from YouTube
 I implemented a Python script based on the script developed by Stephen David William [GitHub]([https://github.com/sdw-online](https://github.com/sdw-online/top_uk_youtubers_2024). To see the script I used, just click [here](assets/script/script_youtube_python.py). 
 
-After runing the script, the dataset has now four additional columns 
+After runing the script, the dataset has now four additional columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos`
 
+
+![updated_data](assets/img/project2_data_updated.png)
