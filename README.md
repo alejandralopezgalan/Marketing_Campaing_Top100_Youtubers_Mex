@@ -73,7 +73,7 @@ The marketing team needs to identify and collaborate with the most influential M
 
 ### Data source
 
-The dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/bhavyadhingra00020/top-100-social-media-influencers-2024-countrywise?resource=download). To view the CSV file, click [here](https://github.com/alejandralopezgalan/top_100_youtubers_mex/blob/main/youtube_data_mexico.csv).
+The dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/bhavyadhingra00020/top-100-social-media-influencers-2024-countrywise?resource=download). To view the CSV file, click [here](assets/data/youtube_data_mexico.csv).
 
 This dataset provides structured information about the top 100 YouTubers from Mexico in 2024. Each entry represents a YouTuber and includes the following attributes:
 
@@ -95,7 +95,7 @@ This dataset provides structured information about the top 100 YouTubers from Me
 
 ### Data Cleaning
 Displayed below is a screenshot of a portion of the data presented in Excel
-![Rscreenshot_data](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project2_kaggle_data_original.png)
+![Screenshot_data](assets/img/project2_kaggle_data_original.png)
 
 The objective is to refine our dataset, ensuring it is well-structured and primed for analysis.
 
@@ -107,5 +107,5 @@ Criteria for the cleaned data:
 After the initial data exploration, I realised that some columns, such as ER, COUNTRY, and TOPIC OF INFLUENCE, are either irrelevant for our analysis or have missing values. Considering our primary goal and the desired solution, the dataset should contain information related to subscriber count, total views, total videos, and engagement metrics. Therefore, we need to extract this information from YouTube to complement our dataset. I use a Python script to extract that information from YouTube.
 
 ### Extracting data from YouTube
-I implemented a Python script based on the script developed by Stephen David William [GitHub](https://github.com/sdw-online). To see the script, just click [here]()
+I implemented a Python script based on the script developed by Stephen David William [GitHub](https://github.com/sdw-online). To see the script, just click [here](assets/script/script_youtube_python.py)
 
