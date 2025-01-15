@@ -116,9 +116,7 @@ After running the script, the dataset now has four additional columns: `channel_
 The script output found no data on these two channels, even though they actually exist on YouTube. Therefore, I decided to manually enter this data using the information from the 'About' section of these YouTube channels. I added this information at the end of the table, so I could use Excel or SQL to sort the channels by their respective ranks based on the	`total_subscribers`,	`total_views` and `total_videos` later on. 
 ![script_ouput](assets/img/project2_script_output.png)
 
-For the following steps, we will use PostgreSQL, thus, I change the column name to lowercase with dashes instead of white spaces, and the column name `rank` instead of `#`. The updated dataset can be found [here](assets/data/updated_youtube_data_mex.csv)
-
-
+For the following steps, we will use PostgreSQL, thus, I change the column name to lowercase with dashes instead of white spaces, and the column name `rank` instead of `#`. The updated dataset can be found [here](assets/data/updated_youtube_data_mex.csv).
 
 ### Data Transformation in SQL
 
