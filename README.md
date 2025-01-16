@@ -137,6 +137,10 @@ I developed a SQL script for data cleaning. For a detailed review of the script,
 <img src="assets/img/project2_database_view_sql.png" width="550" height="500" />
 
 
+### Power BI
+I imported the CSV file "mx_youtubers_data2024"
+
+
 
 
 
