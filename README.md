@@ -126,10 +126,10 @@ I developed a SQL script for data cleaning. For a detailed review of the script,
 1. Create the database.
 2. Create the table to store YouTube data.
 3. Import the data into the newly created table and verify proper loading.
-4. Create a view to simplify the data by selecting specific columns: channel_name, total_subscribers, total_views, total_videos.
+4. Create a view to simplify the data by selecting specific columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos`.
 5. Perform data quality checks:
    a. Verify the number of rows: Top 100 YouTube channels.
-   b. Verify the number of columns: channel_name, total_subscribers, total_views, total_videos.
+   b. Verify the number of columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos`
    c. Check the data type of each variable.
    d. Check the number of unique channels in the database or count the number of duplicate channels.
 6. Create a new table to export the data to a CSV file. To see the output file, click this [link](assets/data/mx_youtubers_data2024.csv).
@@ -138,8 +138,9 @@ I developed a SQL script for data cleaning. For a detailed review of the script,
 
 
 ### Power BI
-I imported the CSV file "mx_youtubers_data2024"
+I loaded the CSV file [mx_youtubers_data2024](assets/data/mx_youtubers_data2024.csv) into a Black Power BI report, and the following image showed that the variables were correctly loaded.
 
+![loaded_data_powerbi](assets/img/prject2_data_loaded-powerbi.png)
 
 
 
