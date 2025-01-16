@@ -137,10 +137,12 @@ I developed a SQL script for data cleaning. For a detailed review of the script,
 <img src="assets/img/project2_database_view_sql.png" width="550" height="500" />
 
 
-### Power BI
+### Analysis in Power BI
 I loaded the CSV file [mx_youtubers_data2024](assets/data/mx_youtubers_data2024.csv) into a Black Power BI report, and the following image showed that the variables were correctly loaded.
 
 ![loaded_data_powerbi](assets/img/prject2_data_loaded-powerbi.png)
+
+#### DAX measures
 
 
 
