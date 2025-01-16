@@ -119,7 +119,7 @@ The script output found no data on these two channels, even though they actually
 For the following steps, we will use PostgreSQL, thus, I change the column name to lowercase with dashes instead of white spaces, and the column name `rank` instead of `#`. The updated dataset can be found [here](assets/data/updated_youtube_data_mex.csv).
 
 ### Data Transformation in SQL
-I developed a SQL script for data cleaning. For a detailed review of the script, click [here](https://github.com/alejandralopezgalan/top_100_youtubers_mex/blob/main/assets/scripts/sql-script-youtubers-mx.sql). The steps involved in the scripts were:
+I developed a SQL script for data cleaning. For a detailed review of the script, click [here](assets/scripts/sql-script-youtubers-mx.sql). The steps involved in the scripts were:
 1. Create the database.
 2. Create the table to store YouTube data.
 3. Import the data into the newly created table and verify proper loading.
@@ -129,7 +129,9 @@ I developed a SQL script for data cleaning. For a detailed review of the script,
    b. Verify the number of columns: channel_name, total_subscribers, total_views, total_videos.
    c. Check the data type of each variable.
    d. Check the number of unique channels in the database or count the number of duplicate channels.
-6. Create a new table to export the data to a CSV file.
+6. Create a new table to export the data to a CSV file. To see the output file, click this [link](assets/data/mx_youtubers_data2024.csv).
+
+![sql_data](assets/img/project2_database_view_sql.png)
 
 
 
