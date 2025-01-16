@@ -95,7 +95,8 @@ This dataset provides structured information about the top 100 YouTubers from Me
 - GitHub: To host the project documentation and version control
 
 ### Data Cleaning
-Displayed below is a screenshot of a portion of the data presented in Excel
+Displayed below is a screenshot of a portion of the data presented in Excel.
+
 ![Screenshot_data](assets/img/project2_kaggle_data_original.png)
 
 The objective is to refine our dataset, ensuring it is well-structured and primed for analysis.
@@ -111,9 +112,11 @@ After the initial data exploration, I realised that some columns, such as ER, CO
 I implemented a Python script based on the script developed by Stephen David William [GitHub]([https://github.com/sdw-online](https://github.com/sdw-online/top_uk_youtubers_2024). To see the script I used, just click [here](assets/script/script_youtube_python.py). 
 
 After running the script, the dataset now has four additional columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos`as seen in the following image. However, the script did not extract data from two YouTubers, which could be related to not recognising the channel ID.
+
 ![updated_data](assets/img/project2_data_updated.png)
 
 The script output found no data on these two channels, even though they actually exist on YouTube. Therefore, I decided to manually enter this data using the information from the 'About' section of these YouTube channels. I added this information at the end of the table, so I could use Excel or SQL to sort the channels by their respective ranks based on the	`total_subscribers`,	`total_views` and `total_videos` later on. 
+
 ![script_ouput](assets/img/project2_script_output.png)
 
 For the following steps, we will use PostgreSQL, thus, I change the column name to lowercase with dashes instead of white spaces, and the column name `rank` instead of `#`. The updated dataset can be found [here](assets/data/updated_youtube_data_mex.csv).
@@ -131,7 +134,7 @@ I developed a SQL script for data cleaning. For a detailed review of the script,
    d. Check the number of unique channels in the database or count the number of duplicate channels.
 6. Create a new table to export the data to a CSV file. To see the output file, click this [link](assets/data/mx_youtubers_data2024.csv).
 
-![sql_data](assets/img/project2_database_view_sql.png)
+<img src="assets/img/project2_database_view_sql.png" width="550" height="500" />
 
 
 
