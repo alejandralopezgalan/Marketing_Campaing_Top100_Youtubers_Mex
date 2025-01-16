@@ -145,6 +145,24 @@ I loaded the CSV file [mx_youtubers_data2024](assets/data/mx_youtubers_data2024.
 #### DAX measures
 
 
+Total subscribers (M) = 
+VAR million = 1000000
+VAR sumofsubscribers = SUM(mx_youtubers_data2024[total_subscribers])
+VAR totalsubscribers = DIVIDE(sumofsubscribers, million)
+
+RETURN totalsubscribers
+
+
+
+Total Views (B) = 
+VAR billion = 1000000000
+VAR sumoftotalviews = SUM(mx_youtubers_data2024[total_views])
+VAR totalviews = DIVIDE(sumoftotalviews, billion)
+
+RETURN totalviews
+
+
+
 
 
 
