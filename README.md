@@ -147,8 +147,12 @@ Measures Table: I constructed a table with all the essential measures for the an
 
 | Measure | Description | DAX code |
 | :--- | :--- | :--- |
-|  `AvgViewsPerVideo(M)` | Computes the average number of views per video, expressed in millions, for a YouTube channel | `AvgViewsPerVideo(M) = VAR sumtotalviews = SUM(mx_youtubers_data2024[total_views]) VAR sumofvideos = SUM(mx_youtubers_data2024[total_videos]) VAR avgviewspervideo = DIVIDE(sumtotalviews, sumofvideos, BLANK()) VAR avgviewspervideomillions = DIVIDE(avgviewspervideo, 1000000, BLANK()) RETURN avgviewspervideomillions` |
-
+| `AvgViewsPerVideo(M)` | Computes the average number of views per video, expressed in millions, for a YouTube channel | `AvgViewsPerVideo(M) = VAR sumtotalviews = SUM(mx_youtubers_data2024[total_views]) VAR sumofvideos = SUM(mx_youtubers_data2024[total_videos]) VAR avgviewspervideo = DIVIDE(sumtotalviews, sumofvideos, BLANK()) VAR avgviewspervideomillions = DIVIDE(avgviewspervideo, 1000000, BLANK()) RETURN avgviewspervideomillions` |
+| `SubscriberEngagementRate` | Calculates the average number of subscribers per video for a YouTube channel | `SubscriberEngagementRate = VAR sumtotalsubscribers = SUM(mx_youtubers_data2024[total_subscribers]) VAR sumtotalvideos = SUM(mx_youtubers_data2024[total_videos]) VAR subscribersengrate = DIVIDE(sumtotalsubscribers, sumtotalvideos, BLANK()) RETURN subscribersengrate` |
+| `TotalSubscribers(M)` | Converts the total number of subscribers into millions, making it easier to interpret large subscriber counts | `TotalSubscribers(M) = VAR million = 1000000 VAR sumofsubscribers = SUM(mx_youtubers_data2024[total_subscribers]) VAR totalsubscribers = DIVIDE(sumofsubscribers, million) RETURN totalsubscribers` |
+| `TotalVideos` | Sums up the total number of videos for a YouTube channel | `TotalVideos = VAR totalvideos = SUM(mx_youtubers_data2024[total_videos]) RETURN totalvideos` |
+| `TotalViews(B)` | Converts the total number of views into billions, providing a clearer representation of large view counts | `TotalViews(B) = VAR billion = 1000000000 VAR sumoftotalviews = SUM(mx_youtubers_data2024[total_views]) VAR totalviews = DIVIDE(sumoftotalviews, billion, BLANK()) RETURN totalviews` |
+| `ViewsPerSubscriber` | Determines the total number of views each subscriber has generated, offering insights into how engaged the subscriber base is with the channel's content. | `ViewsPerSubscriber = VAR sumtotalsubscribers = SUM(mx_youtubers_data2024[total_subscribers]) VAR sumofviews = SUM(mx_youtubers_data2024[total_views]) VAR viewspersubscriber = DIVIDE(sumofviews, sumtotalsubscribers, BLANK()) RETURN viewspersubscriber` |
 
 
 
