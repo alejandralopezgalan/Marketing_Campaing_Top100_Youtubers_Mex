@@ -106,12 +106,12 @@ Criteria for the cleaned data:
 - Ensure all data types are suitable for their respective columns.
 - Verify that no column contains null values, guaranteeing completeness of all records.
 
-After the initial data exploration, I realised that some columns, such as ER, COUNTRY, and TOPIC OF INFLUENCE, are either irrelevant for our analysis or have missing values. Considering our primary goal and the desired solution, the dataset should contain information related to subscriber count, total views, total videos, and engagement metrics. Therefore, we need to extract this information from YouTube to complement our dataset. I use a Python script to extract that information from YouTube.
+After the initial data exploration, I realised that some columns, such as ER, COUNTRY, and TOPIC OF INFLUENCE, are either irrelevant for our analysis or have missing values. Considering our primary goal and the desired solution, the dataset should contain information related to subscriber count, total views, total videos, and engagement metrics. Therefore, I needed to extract this information from YouTube to complement our dataset. I used a Python script to extract that information from YouTube.
 
 ### Extracting data from YouTube
 I implemented a Python script based on the script developed by Stephen David William [GitHub]([https://github.com/sdw-online](https://github.com/sdw-online/top_uk_youtubers_2024). To see the script I used, just click [here](assets/script/script_youtube_python.py). 
 
-After running the script, the dataset now has four additional columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos`as seen in the following image. However, the script did not extract data from two YouTubers, which could be related to not recognising the channel ID.
+After running the script, the dataset had four additional columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos`as seen in the following image. However, the script did not extract data from two YouTubers, which could be related to not recognising the channel ID.
 
 ![updated_data](assets/img/project2_data_updated.png)
 
@@ -119,7 +119,7 @@ The script output found no data on these two channels, even though they actually
 
 ![script_ouput](assets/img/project2_script_output.png)
 
-For the following steps, we will use PostgreSQL, thus, I change the column name to lowercase with dashes instead of white spaces, and the column name `rank` instead of `#`. The updated dataset can be found [here](assets/data/updated_youtube_data_mex.csv).
+For the following steps, I used PostgreSQL, thus, I changed the column name to lowercase with dashes instead of white spaces, and the column name `rank` instead of `#`. The updated dataset can be found [here](assets/data/updated_youtube_data_mex.csv).
 
 ### Data Transformation in SQL
 I developed a SQL script for data cleaning. For a detailed review of the script, click [here](assets/scripts/sql-script-youtubers-mx.sql). The steps involved in the scripts were:
