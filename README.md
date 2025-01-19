@@ -143,23 +143,13 @@ I loaded the CSV file [mx_youtubers_data2024](assets/data/mx_youtubers_data2024.
 ![loaded_data_powerbi](assets/img/prject2_data_loaded-powerbi.png)
 
 #### DAX measures
+Measures Table: I constructed a table with all the essential measures for the analysis, employing DAX formulas to develop these metrics.
+
+| Measure | Description | DAX code |
+| :--- | :--- | :--- |
+|  `AvgViewsPerVideo(M)` | Computes the average number of views per video, expressed in millions, for a YouTube channel | `AvgViewsPerVideo(M) = VAR sumtotalviews = SUM(mx_youtubers_data2024[total_views]) VAR sumofvideos = SUM(mx_youtubers_data2024[total_videos]) VAR avgviewspervideo = DIVIDE(sumtotalviews, sumofvideos, BLANK()) VAR avgviewspervideomillions = DIVIDE(avgviewspervideo, 1000000, BLANK()) RETURN avgviewspervideomillions` |
 
 
-Total subscribers (M) = 
-VAR million = 1000000
-VAR sumofsubscribers = SUM(mx_youtubers_data2024[total_subscribers])
-VAR totalsubscribers = DIVIDE(sumofsubscribers, million)
-
-RETURN totalsubscribers
-
-
-
-Total Views (B) = 
-VAR billion = 1000000000
-VAR sumoftotalviews = SUM(mx_youtubers_data2024[total_views])
-VAR totalviews = DIVIDE(sumoftotalviews, billion)
-
-RETURN totalviews
 
 
 
