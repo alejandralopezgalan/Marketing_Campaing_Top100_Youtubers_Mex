@@ -7,13 +7,13 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
 
 > **Note**
 >
-> This project was inspired and guided by the work of Stephen David William [GitHub](https://github.com/sdw-online), whose data portfolio project provided invaluable insights and direction. I deeply appreciate the effort and dedication Stephen put into creating such a comprehensive resource.
+> This project was inspired and guided by the work of Stephen David William on [GitHub](https://github.com/sdw-online), wwhose data portfolio project provided invaluable insights and direction. I deeply appreciate the effort and dedication Stephen put into creating such a comprehensive resource.
 >
 > Original Project:
 > 
 > Title: Excel to Power BI Portfolio Project | Full End-to-End Data Project | top_uk_youtubers_2024. Author: Stephen David William. Platform: [YouTube](https://www.youtube.com/watch?v=mm_sN-Elplg&t=510s&ab_channel=Stephen%7CData)
 >
-> I have used this project as a foundation to expand my skills and knowledge in data analytics. All credit for the original concept and methodology goes to [Stephen David William](https://www.linkedin.com/in/stephen-david-williams-860428123/).
+> I have used this project as a foundation to expand my skills and knowledge in data analytics. All credit for the original concept and methodology goes to[Stephen David William](https://www.linkedin.com/in/stephen-david-williams-860428123/).
 <br/>
 
 ## Table Of Contents
@@ -39,10 +39,10 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
 ---
 ## Executive Summary
 ### Primary Goal
-Identify the top YouTubers from Mexico in 2024 to determine which influencers would be best suited for running successful marketing campaigns throughout the rest of the year.
+Identify the top YouTubers from Mexico in 2024 to determine which influencers are best suited for running successful marketing campaigns throughout the rest of the year.
 
 ### Solution
-Develop a dashboard to offer insights into the top Mexican YouTubers in 2024, showcasing their **subscriber count, total views, total videos**, and **engagement metrics**. This tool will support the marketing team in making informed decisions about which YouTubers to collaborate with for their campaigns
+Develop a dashboard to provide insights into the top Mexican YouTubers in 2024, showcasing their **subscriber count, total views, total videos**, and **engagement metrics**. This tool will support the marketing team in making informed decisions about which YouTubers to collaborate with for their campaigns.
 
 
 ### Key Findings
@@ -60,14 +60,14 @@ Develop a dashboard to offer insights into the top Mexican YouTubers in 2024, sh
 ## Introduction
 
 ### Business Problem
-The marketing team needs to identify and collaborate with the most influential Mexican YouTubers to maximise the effectiveness of their marketing campaigns. Currently, they lack a comprehensive and easily accessible tool that provides insights into key metrics such as subscriber count, total views, total videos, and engagement metrics. This gap hinders their ability to make informed decisions about which YouTubers to partner with for optimal campaign performance
+The marketing team needs to identify and collaborate with the most influential Mexican YouTubers to maximise the effectiveness of their marketing campaigns. Currently, they lack a comprehensive and easily accessible tool that provides insights into key metrics such as subscriber count, total views, total videos, and engagement metrics. This gap hinders their ability to make informed decisions about which YouTubers to partner with for optimal campaign performance.
 
 ### Goals
 1. Develop an Interactive Dashboard: Create a user-friendly dashboard using Power BI to visualise data on the top Mexican YouTubers in 2024.
 2. Data Collection and Integration: Gather comprehensive data on subscriber counts, total views, total videos, and engagement metrics for the top YouTubers in Mexico.
 3. Insight Generation: Analyse the collected data to identify trends and patterns among the top YouTubers.
-4. Support Informed Decision-Making: Equip the marketing team with actionable insights to identify the best YouTubers for collaboration. 
-5. Customisable Features: Allow for customisable views and filters within the dashboard to cater to specific needs and preferences of the marketing team.
+4. Support Informed Decision-Making: Equip the marketing team with actionable insights to identify the best YouTubers for collaboration.
+5. Customisable Features: Allow for customisable views and filters within the dashboard to cater to the specific needs and preferences of the marketing team.
 
 ---
 ## Methodology
@@ -76,7 +76,7 @@ The marketing team needs to identify and collaborate with the most influential M
 
 The dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/bhavyadhingra00020/top-100-social-media-influencers-2024-countrywise?resource=download). To view the CSV file, click [here](assets/data/youtube_data_mexico.csv).
 
-This dataset provides structured information about the top 100 YouTubers from Mexico in 2024. Each entry represents a YouTuber and includes the following attributes:
+his dataset provides structured information about the top 100 YouTubers from Mexico in 2024. Each entry represents a YouTuber and includes the following attributes:
 
 | Column name | Description | 
 | :--- | :--- |
@@ -106,7 +106,7 @@ Criteria for the cleaned data:
 - Ensure all data types are suitable for their respective columns.
 - Verify that no column contains null values, guaranteeing completeness of all records.
 
-After the initial data exploration, I realised that some columns, such as ER, COUNTRY, and TOPIC OF INFLUENCE, are either irrelevant for our analysis or have missing values. Considering our primary goal and the desired solution, the dataset should contain information related to subscriber count, total views, total videos, and engagement metrics. Therefore, I needed to extract this information from YouTube to complement our dataset. I used a Python script to extract that information from YouTube.
+After the initial data exploration, I realised that some columns, such as `ER`, `COUNTRY`, and `TOPIC OF INFLUENCE`, are either irrelevant for our analysis or have missing values. Considering our primary goal and the desired solution, the dataset should contain information related to subscriber count, total views, total videos, and engagement metrics. Therefore, I needed to extract this information from YouTube to complement our dataset. I used a Python script to extract that information from YouTube.
 
 ### Extracting data from YouTube
 I implemented a Python script based on the script developed by Stephen David William, available on [GitHub]([https://github.com/sdw-online](https://github.com/sdw-online/top_uk_youtubers_2024). To see the script I used, just click [here](assets/script/script_youtube_python.py). 
@@ -115,11 +115,11 @@ After running the script, the dataset included four additional columns: `channel
 
 ![updated_data](assets/img/project2_data_updated.png)
 
-The script output found no data on these two channels, even though they actually exist on YouTube. Therefore, I decided to manually enter this data using the information from the 'About' section of these YouTube channels. I added this information at the end of the table, so I could use Excel or SQL to sort the channels by their respective ranks based on the	`total_subscribers`,	`total_views` and `total_videos` later on. 
+The script output found no data on these two channels, even though they actually exist on YouTube. Therefore, I decided to manually enter this data using the information from the 'About' section of these YouTube channels. I added this information at the end of the table, so I could use Excel or SQL to sort the channels by their respective ranks based on	`total_subscribers`,	`total_views` and `total_videos` later on. 
 
 ![script_ouput](assets/img/project2_script_output.png)
 
-For the following steps, I used PostgreSQL, thus, I changed the column name to lowercase with dashes instead of white spaces, and the column name `rank` instead of `#`. The updated dataset can be found [here](assets/data/updated_youtube_data_mex.csv).
+or the following steps, I used PostgreSQL. Therefore, I changed the column names to lowercase with dashes instead of white spaces and renamed the column `rank` instead of `#`. The updated dataset can be found [here](assets/data/updated_youtube_data_mex.csv).
 
 ### Data Transformation in SQL
 I developed a SQL script for data cleaning. For a detailed review of the script, click [here](assets/scripts/sql-script-youtubers-mx.sql). The steps involved in the scripts were:
@@ -138,7 +138,7 @@ I developed a SQL script for data cleaning. For a detailed review of the script,
 
 
 ### Analysis in Power BI
-I loaded the CSV file [mx_youtubers_data2024](assets/data/mx_youtubers_data2024.csv) into a Black Power BI report, and the following image showed that the variables were correctly loaded.
+I loaded the CSV file [mx_youtubers_data2024](assets/data/mx_youtubers_data2024.csv) into a Power BI report, and the following image showed that the variables were correctly loaded.
 
 ![loaded_data_powerbi](assets/img/prject2_data_loaded-powerbi.png)
 
@@ -153,6 +153,8 @@ Measures Table: I constructed a table with all the essential measures for the an
 | `TotalVideos` | Sums up the total number of videos for a YouTube channel | `TotalVideos = VAR totalvideos = SUM(mx_youtubers_data2024[total_videos]) RETURN totalvideos` |
 | `TotalViews(B)` | Converts the total number of views into billions, providing a clearer representation of large view counts | `TotalViews(B) = VAR billion = 1000000000 VAR sumoftotalviews = SUM(mx_youtubers_data2024[total_views]) VAR totalviews = DIVIDE(sumoftotalviews, billion, BLANK()) RETURN totalviews` |
 | `ViewsPerSubscriber` | Determines the total number of views each subscriber has generated, offering insights into how engaged the subscriber base is with the channel's content. | `ViewsPerSubscriber = VAR sumtotalsubscribers = SUM(mx_youtubers_data2024[total_subscribers]) VAR sumofviews = SUM(mx_youtubers_data2024[total_views]) VAR viewspersubscriber = DIVIDE(sumofviews, sumtotalsubscribers, BLANK()) RETURN viewspersubscriber` |
+
+
 
 
 
