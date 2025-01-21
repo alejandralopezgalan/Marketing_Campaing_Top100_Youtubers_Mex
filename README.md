@@ -31,6 +31,7 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
    - [Data Cleaning](#data-cleaning)
    - [Extracting data from YouTube](extracting-data-from-youtube)
    - [Data Transformation in SQL](#data-transformation-in-sql)
+   - [Analysis in Power BI]
    - [DAX measures](#dax-measures)
    - [Data Analysis](#data-analysis)
    - [Data Visualisation](#data-visualisation)
@@ -145,7 +146,7 @@ I loaded the CSV file [mx_youtubers_data2024](assets/data/mx_youtubers_data2024.
 ![loaded_data_powerbi](assets/img/prject2_data_loaded-powerbi.png)
 
 #### DAX measures
-Measures Table: I constructed a table with all the essential measures for the analysis, employing DAX formulas to develop these metrics.
+I constructed a table with all the essential measures for the analysis, employing DAX formulas to develop these metrics.
 
 | Measure | Description | DAX code |
 | :--- | :--- | :--- |
@@ -157,7 +158,7 @@ Measures Table: I constructed a table with all the essential measures for the an
 | `ViewsPerSubscriber` | Determines the total number of views each subscriber has generated, offering insights into how engaged the subscriber base is with the channel's content. | `ViewsPerSubscriber = VAR sumtotalsubscribers = SUM(mx_youtubers_data2024[total_subscribers]) VAR sumofviews = SUM(mx_youtubers_data2024[total_views]) VAR viewspersubscriber = DIVIDE(sumofviews, sumtotalsubscribers, BLANK()) RETURN viewspersubscriber` |
 
 
-
+### 
 
 
 
