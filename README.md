@@ -221,6 +221,8 @@ ViewsPerSubscriber =
 #### Data Visualisation
 
 The dashboard consist of: 
-- A table the top 100 Mexicans Youtubers with data of their Total subscribers in millions, number of total videos, and total views in billions
-- A treemap with the top 10 Mexicans Youtubers by Views in billions with data on their number of total videos and total subscribers in millions
+- A table with the top 100 YouTubers, including data on their total subscribers (in millions), number of total videos, and total views (in billions).
+- A treemap showing the top 10 YouTubers by views (in billions), with data on their number of total videos and total subscribers (in millions).
+- Channel Engagement Ratios: three cards, one for average views per video, one for subscriber engagement rate, and one for views per subscriber.
+- A bar chart showing the top 10 YouTubers by total subscribers (in millions)."
 
