@@ -32,9 +32,8 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
    - [Extracting data from YouTube](extracting-data-from-youtube)
    - [Data Transformation in SQL](#data-transformation-in-sql)
    - [Analysis in Power BI](#analysis-in-power-bi)
-   - [DAX measures](#dax-measures)
-   - [Data Analysis](#data-analysis)
-   - [Data Visualisation](#data-visualisation)
+     - [DAX measures](#dax-measures)
+     - [Data Visualisation](#data-visualisation)
 - [Results and Implications](#results-and-implications)
 
 ---
@@ -148,17 +147,56 @@ I loaded the CSV file [mx_youtubers_data2024](assets/data/mx_youtubers_data2024.
 #### DAX measures
 I constructed a table with all the essential measures for the analysis, employing DAX formulas to develop these metrics.
 
-| Measure | Description | DAX code |
-| :--- | :--- | :--- |
-| `AvgViewsPerVideo(M)` | Computes the average number of views per video, expressed in millions, for a YouTube channel | `AvgViewsPerVideo(M) = VAR sumtotalviews = SUM(mx_youtubers_data2024[total_views]) VAR sumofvideos = SUM(mx_youtubers_data2024[total_videos]) VAR avgviewspervideo = DIVIDE(sumtotalviews, sumofvideos, BLANK()) VAR avgviewspervideomillions = DIVIDE(avgviewspervideo, 1000000, BLANK()) RETURN avgviewspervideomillions` |
-| `SubscriberEngagementRate` | Calculates the average number of subscribers per video for a YouTube channel | `SubscriberEngagementRate = VAR sumtotalsubscribers = SUM(mx_youtubers_data2024[total_subscribers]) VAR sumtotalvideos = SUM(mx_youtubers_data2024[total_videos]) VAR subscribersengrate = DIVIDE(sumtotalsubscribers, sumtotalvideos, BLANK()) RETURN subscribersengrate` |
+**1. AvgViewsPerVideo(M)**
+Computes the average number of views per video, expressed in millions, for a YouTube channel
+```sql  
+AvgViewsPerVideo(M) =
+  VAR sumtotalviews = SUM(mx_youtubers_data2024[total_views])
+  VAR sumofvideos = SUM(mx_youtubers_data2024[total_videos])
+  VAR avgviewspervideo = DIVIDE(sumtotalviews, sumofvideos, BLANK())
+  VAR avgviewspervideomillions = DIVIDE(avgviewspervideo, 1000000, BLANK())
+
+RETURN avgviewspervideomillions
+```
+
+** 2. SubscriberEngagementRate**
+Calculates the average number of subscribers per video for a YouTube channel 
+```sql  
+SubscriberEngagementRate =
+  VAR sumtotalsubscribers = SUM(mx_youtubers_data2024[total_subscribers])
+  VAR sumtotalvideos = SUM(mx_youtubers_data2024[total_videos])
+  VAR subscribersengrate = DIVIDE(sumtotalsubscribers, sumtotalvideos, BLANK())
+
+RETURN subscribersengrate
+```
+
+```sql  
+
+```
+
+```sql  
+
+```
+
+```sql  
+
+```
+
+```sql  
+
+```
+
+
+
+
+
 | `TotalSubscribers(M)` | Converts the total number of subscribers into millions, making it easier to interpret large subscriber counts | `TotalSubscribers(M) = VAR million = 1000000 VAR sumofsubscribers = SUM(mx_youtubers_data2024[total_subscribers]) VAR totalsubscribers = DIVIDE(sumofsubscribers, million) RETURN totalsubscribers` |
 | `TotalVideos` | Sums up the total number of videos for a YouTube channel | `TotalVideos = VAR totalvideos = SUM(mx_youtubers_data2024[total_videos]) RETURN totalvideos` |
 | `TotalViews(B)` | Converts the total number of views into billions, providing a clearer representation of large view counts | `TotalViews(B) = VAR billion = 1000000000 VAR sumoftotalviews = SUM(mx_youtubers_data2024[total_views]) VAR totalviews = DIVIDE(sumoftotalviews, billion, BLANK()) RETURN totalviews` |
 | `ViewsPerSubscriber` | Determines the total number of views each subscriber has generated, offering insights into how engaged the subscriber base is with the channel's content. | `ViewsPerSubscriber = VAR sumtotalsubscribers = SUM(mx_youtubers_data2024[total_subscribers]) VAR sumofviews = SUM(mx_youtubers_data2024[total_views]) VAR viewspersubscriber = DIVIDE(sumofviews, sumtotalsubscribers, BLANK()) RETURN viewspersubscriber` |
 
 
-### 
+#
 
 
 
