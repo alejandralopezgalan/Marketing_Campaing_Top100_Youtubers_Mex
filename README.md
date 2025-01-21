@@ -159,6 +159,7 @@ AvgViewsPerVideo(M) =
 RETURN avgviewspervideomillions
 ```
 
+
 **2. SubscriberEngagementRate** <br />
 Calculates the average number of subscribers per video for a YouTube channel 
 ```sql  
