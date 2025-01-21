@@ -119,7 +119,10 @@ The script output found no data on these two channels, even though they actually
 
 ![script_ouput](assets/img/project2_script_output.png)
 
-or the following steps, I used PostgreSQL. Therefore, I changed the column names to lowercase with dashes instead of white spaces and renamed the column `rank` instead of `#`. The updated dataset can be found [here](assets/data/updated_youtube_data_mex.csv).
+For the following steps, I used PostgreSQL. Therefore, I changed the column names to lowercase with dashes instead of white spaces and renamed the column `rank` instead of `#` in Excel before loading the data in SQL. The updated dataset can be found [here](assets/data/updated_youtube_data_mex.csv), and the following image shows a view of this dataset.
+
+![for-sql](/assets/img/project2_database_for_sql.png)
+
 
 ### Data Transformation in SQL
 I developed a SQL script for data cleaning. For a detailed review of the script, click [here](assets/scripts/sql-script-youtubers-mx.sql). The steps involved in the scripts were:
