@@ -128,10 +128,10 @@ I developed a SQL script for data cleaning. For a detailed review of the script,
 3. Import the data into the newly created table and verify proper loading.
 4. Create a view to simplify the data by selecting specific columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos`.
 5. Perform data quality checks:
-   a. Verify the number of rows: Top 100 YouTube channels.
-   b. Verify the number of columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos`
-   c. Check the data type of each variable.
-   d. Check the number of unique channels in the database or count the number of duplicate channels.
+   - a. Verify the number of rows: Top 100 YouTube channels.
+   - b. Verify the number of columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos`
+   - c. Check the data type of each variable.
+   - d. Check the number of unique channels in the database or count the number of duplicate channels.
 6. Create a new table to export the data to a CSV file. To see the output file, click this [link](assets/data/mx_youtubers_data2024.csv).
 
 <img src="assets/img/project2_database_view_sql.png" width="550" height="500" />
