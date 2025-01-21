@@ -148,6 +148,7 @@ I loaded the CSV file [mx_youtubers_data2024](assets/data/mx_youtubers_data2024.
 I constructed a table with all the essential measures for the analysis, employing DAX formulas to develop these metrics.
 
 **1. AvgViewsPerVideo(M)**
+
 Computes the average number of views per video, expressed in millions, for a YouTube channel
 ```sql  
 AvgViewsPerVideo(M) =
@@ -159,7 +160,8 @@ AvgViewsPerVideo(M) =
 RETURN avgviewspervideomillions
 ```
 
-** 2. SubscriberEngagementRate**
+**2. SubscriberEngagementRate**
+
 Calculates the average number of subscribers per video for a YouTube channel 
 ```sql  
 SubscriberEngagementRate =
