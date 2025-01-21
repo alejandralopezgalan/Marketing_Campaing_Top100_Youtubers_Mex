@@ -218,5 +218,9 @@ ViewsPerSubscriber =
 ```
 
 
-#
+#### Data Visualisation
+
+The dashboard consist of: 
+- A table the top 100 Mexicans Youtubers with data of their Total subscribers in millions, number of total videos, and total views in billions
+- A treemap with the top 10 Mexicans Youtubers by Views in billions with data on their number of total videos and total subscribers in millions
 
