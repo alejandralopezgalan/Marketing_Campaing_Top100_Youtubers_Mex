@@ -31,7 +31,7 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
    - [Data Cleaning](#data-cleaning)
    - [Extracting data from YouTube](extracting-data-from-youtube)
    - [Data Transformation in SQL](#data-transformation-in-sql)
-   - [Analysis in Power BI]
+   - [Analysis in Power BI](#analysis-in-power-bi)
    - [DAX measures](#dax-measures)
    - [Data Analysis](#data-analysis)
    - [Data Visualisation](#data-visualisation)
