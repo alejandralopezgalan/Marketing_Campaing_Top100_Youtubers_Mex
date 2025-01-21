@@ -156,7 +156,7 @@ AvgViewsPerVideo(M) =
   VAR avgviewspervideo = DIVIDE(sumtotalviews, sumofvideos, BLANK())
   VAR avgviewspervideomillions = DIVIDE(avgviewspervideo, 1000000, BLANK())
 
-RETURN avgviewspervideomillions
+  RETURN avgviewspervideomillions
 ```
 <br />
 
@@ -168,7 +168,7 @@ SubscriberEngagementRate =
   VAR sumtotalvideos = SUM(mx_youtubers_data2024[total_videos])
   VAR subscribersengrate = DIVIDE(sumtotalsubscribers, sumtotalvideos, BLANK())
 
-RETURN subscribersengrate
+  RETURN subscribersengrate
 ```
 <br />
 
@@ -180,7 +180,7 @@ TotalSubscribers(M) =
   VAR sumofsubscribers = SUM(mx_youtubers_data2024[total_subscribers])
   VAR totalsubscribers = DIVIDE(sumofsubscribers, million)
 
-RETURN totalsubscribers
+  RETURN totalsubscribers
 ```
 <br />
 
@@ -190,7 +190,7 @@ Sums up the total number of videos for a YouTube channel.
 TotalVideos =
   VAR totalvideos = SUM(mx_youtubers_data2024[total_videos])
 
-RETURN totalvideos
+  RETURN totalvideos
 ```
 <br />
 
@@ -202,7 +202,7 @@ TotalViews(B) =
   VAR sumoftotalviews = SUM(mx_youtubers_data2024[total_views])
   VAR totalviews = DIVIDE(sumoftotalviews, billion, BLANK())
 
-RETURN totalviews
+  RETURN totalviews
 ```
 <br />
 
@@ -214,7 +214,7 @@ ViewsPerSubscriber =
   VAR sumofviews = SUM(mx_youtubers_data2024[total_views])
   VAR viewspersubscriber = DIVIDE(sumofviews, sumtotalsubscribers, BLANK())
 
-RETURN viewspersubscriber
+  RETURN viewspersubscriber
 ```
 
 
