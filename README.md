@@ -147,7 +147,7 @@ I loaded the CSV file [mx_youtubers_data2024](assets/data/mx_youtubers_data2024.
 #### DAX measures
 I constructed a table with all the essential measures for the analysis, employing DAX formulas to develop these metrics.
 
-**1. AvgViewsPerVideo(M)** <br />
+**1. `AvgViewsPerVideo(M)`** <br />
 Computes the average number of views per video, expressed in millions, for a YouTube channel
 ```sql  
 AvgViewsPerVideo(M) =
@@ -170,28 +170,33 @@ SubscriberEngagementRate =
 
 RETURN subscribersengrate
 ```
+<br />
+
+**`TotalSubscribers(M)`** <br />
+```sql  
+
+```
+<br />
+
+```sql  
+
+```
+<br />
+
+```sql  
+
+```
+<br />
 
 ```sql  
 
 ```
 
-```sql  
-
-```
-
-```sql  
-
-```
-
-```sql  
-
-```
 
 
 
 
-
-| `TotalSubscribers(M)` | Converts the total number of subscribers into millions, making it easier to interpret large subscriber counts | `TotalSubscribers(M) = VAR million = 1000000 VAR sumofsubscribers = SUM(mx_youtubers_data2024[total_subscribers]) VAR totalsubscribers = DIVIDE(sumofsubscribers, million) RETURN totalsubscribers` |
+| `` | Converts the total number of subscribers into millions, making it easier to interpret large subscriber counts | `TotalSubscribers(M) = VAR million = 1000000 VAR sumofsubscribers = SUM(mx_youtubers_data2024[total_subscribers]) VAR totalsubscribers = DIVIDE(sumofsubscribers, million) RETURN totalsubscribers` |
 | `TotalVideos` | Sums up the total number of videos for a YouTube channel | `TotalVideos = VAR totalvideos = SUM(mx_youtubers_data2024[total_videos]) RETURN totalvideos` |
 | `TotalViews(B)` | Converts the total number of views into billions, providing a clearer representation of large view counts | `TotalViews(B) = VAR billion = 1000000000 VAR sumoftotalviews = SUM(mx_youtubers_data2024[total_views]) VAR totalviews = DIVIDE(sumoftotalviews, billion, BLANK()) RETURN totalviews` |
 | `ViewsPerSubscriber` | Determines the total number of views each subscriber has generated, offering insights into how engaged the subscriber base is with the channel's content. | `ViewsPerSubscriber = VAR sumtotalsubscribers = SUM(mx_youtubers_data2024[total_subscribers]) VAR sumofviews = SUM(mx_youtubers_data2024[total_views]) VAR viewspersubscriber = DIVIDE(sumofviews, sumtotalsubscribers, BLANK()) RETURN viewspersubscriber` |
