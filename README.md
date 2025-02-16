@@ -221,8 +221,20 @@ ViewsPerSubscriber =
 #### Data Visualisation
 
 The dashboard consist of: 
-- A table with the top 100 YouTubers, including data on their total subscribers (in millions), number of total videos, and total views (in billions).
-- A treemap showing the top 10 YouTubers by views (in billions), with data on their number of total videos and total subscribers (in millions).
-- Channel Engagement Ratios: three cards, one for average views per video, one for subscriber engagement rate, and one for views per subscriber.
-- A bar chart showing the top 10 YouTubers by total subscribers (in millions)."
+1. Table of the Top 100 YouTubers: This table presents the most popular YouTube influencers, showcasing data on their total number of subscribers (in millions), the aggregate number of videos, and the overall views (in billions).
+2. Treemap of the Top 10 YouTubers: This treemap illustrates the top 10 YouTubers by their total views (in billions). Each segment delineates a YouTuber, accompanied by data on their total number of videos and subscribers (in millions).
+3. Channel Engagement Ratios: Three cards present essential engagement metrics.
+   - Average Views per Video: The mean number of views each video generates.
+   - Subscriber Engagement Rate: A metric quantifying the extent of subscribers' engagement with the content.
+   - Views per Subscriber: The average number of views generated per subscriber.
+4. Bar Chart of the Top 10 YouTubers: This bar chart ranks the top 10 YouTubers based on their total number of subscribers (in millions), providing a visual representation of their popularity.
 
+![dashboard](assets/img/img/project2_dashboard.png)
+
+The interactive features of this dashboard:
+1. Table Interactivity: The table facilitates sorting and filtering of the top 100 YouTubers by subscribers, videos, or views. Selecting a YouTuber's name could present detailed insights into their channel's performance.
+2. Treemap Interactivity: Hovering over each segment of the treemap unveils additional information regarding the YouTuber's total videos and subscribers. Selecting a segment could navigate to a more detailed analysis of that YouTuber's channel analytics.
+3. Engagement Cards Interactivity: The cards dynamically update as different YouTubers are selected from the table or treemap, enabling the comparison of engagement metrics across channels.
+4. Bar Chart Interactivity: The bar chart permits highlighting and comparison of the top 10 YouTubers by total subscribers. Hovering over each bar displays a tooltip with more comprehensive subscriber information.
+
+![dashboard-video](assets/img/project2_video_dashboard.gif)
