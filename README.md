@@ -244,18 +244,18 @@ The interactive features of this dashboard:
 Based on the information and the data analysis I have done so far, it is possible to continue with the marketing analysis for the campaign. First, I focused on the following questions:
 
 1. Who are the top 10 YouTubers with the most subscribers?
-| Rank   | Channel                                            | Subscribers (M) |
-| :----- |:-------------------------------------------------- | --------------: |
-| 1      | Fede Vigevani                                      | 62.30           |
-| 2      | YOLO AVENTURAS                                     | 58.50           |
-| 3      | Badabun                                            | 47.60           |
-| 4      | Kimberly Loaiza                                    | 46.30           |
-| 5      | Juan De Dios Pantoja                               | 44.00           |
-| 6      | Masha y el Oso                                     | 39.60           |
-| 7      | GENIAL                                             | 32.00           |
-| 8      | YOLO                                               | 31.90           |
-| 9      | Susy Mouriz                                        | 27.30           |
-| 10     | BabyBus - Canciones Infantiles & Videos para Niños | 26.80           |
+| Rank | Channel | Subscribers (M) |
+| :--- |:--- | ---: |
+| 1 | Fede Vigevani | 62.30 |
+| 2 | YOLO AVENTURAS | 58.50 |
+| 3 | Badabun | 47.60 |
+| 4 | Kimberly Loaiza | 46.30 |
+| 5 | Juan De Dios Pantoja | 44.00 |
+| 6 | Masha y el Oso | 39.60 |
+| 7 | GENIAL | 32.00 |
+| 8 | YOLO | 31.90 |
+| 9 | Susy Mouriz | 27.30 |
+| 10 | BabyBus - Canciones Infantiles & Videos para Niños | 26.80 |
 
 
 2. Which 3 channels have uploaded the most videos?
