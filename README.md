@@ -275,7 +275,8 @@ Based on the information and the data analysis I have done so far, it is possibl
 
 
 4. Which 3 channels have the highest average views per video?
-  | Rank | Channel             | Total Views (B) |
+
+| Rank | Channel             | Total Views (B) |
 | :--- |:--------------------- | --------------: |
 | 1    | Christian Nodal       | 564.02          |
 | 2    | Los Ángeles Azules    | 116.24          |
