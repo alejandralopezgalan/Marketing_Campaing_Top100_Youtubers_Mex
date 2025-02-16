@@ -257,7 +257,7 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 8    | YOLO                                               | 31.90           |
 | 9    | Susy Mouriz                                        | 27.30           |
 | 10   | BabyBus - Canciones Infantiles & Videos para Niños | 26.80           |
-
+<br />
 
 2. Which 3 channels have uploaded the most videos?
 
@@ -266,7 +266,7 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 1    | Tlnovelas     | 59898           |
 | 2    | Badabun       | 24080           |
 | 3    | Tu COSMOPOLIS | 11926           |
-
+<br />
 
 3. Which 3 channels have the most views?
 
@@ -275,7 +275,7 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 1    | YOLO AVENTURAS | 20.52           |
 | 2    | Masha y el Oso | 20.26           |
 | 3    | Badabun        | 19.91           |
-
+<br />
 
 4. Which 3 channels have the highest average views per video?
 
@@ -284,7 +284,7 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 1    | Christian Nodal       | 564.02          |
 | 2    | Los Ángeles Azules    | 116.24          |
 | 3    | vicentefernandez&reg; | 87.58           |
-
+<br />
 
 5. Which 3 channels have the highest views per subscriber ratio?
 
@@ -293,7 +293,7 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 1    | Los Ángeles Azules    | 1,490.62             |
 | 2    | Lizos Music           | 1,433.94             |
 | 3    | vicentefernandez&reg; | 1,316.36             |
-
+<br />
    
 6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
 
