@@ -229,7 +229,7 @@ The dashboard consist of:
    - Views per Subscriber: The average number of views generated per subscriber.
 4. Bar Chart of the Top 10 YouTubers: This bar chart ranks the top 10 YouTubers based on their total number of subscribers (in millions), providing a visual representation of their popularity.
 
-![dashboard](assets/img/img/project2_dashboard.png)
+![dashboard](assets/img/project2_dashboard.png)
 
 The interactive features of this dashboard:
 1. Table Interactivity: The table facilitates sorting and filtering of the top 100 YouTubers by subscribers, videos, or views. Selecting a YouTuber's name could present detailed insights into their channel's performance.
