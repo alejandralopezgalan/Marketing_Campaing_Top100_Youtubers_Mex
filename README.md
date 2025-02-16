@@ -34,7 +34,8 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
    - [Analysis in Power BI](#analysis-in-power-bi)
      - [DAX measures](#dax-measures)
      - [Data Visualisation](#data-visualisation)
-- [Results and Implications](#results-and-implications)
+  - [Data Analysis for the Marketing Campaign](#data-analysis-for-the-marketing-campaign)
+- [Conclusions](#conclusions)
 
 ---
 ## Executive Summary
@@ -46,7 +47,7 @@ Develop a dashboard to provide insights into the top Mexican YouTubers in 2024, 
 
 
 ### Key Findings
--
+- 
 - a
 -
 
@@ -238,3 +239,21 @@ The interactive features of this dashboard:
 4. Bar Chart Interactivity: The bar chart permits highlighting and comparison of the top 10 YouTubers by total subscribers. Hovering over each bar displays a tooltip with more comprehensive subscriber information.
 
 ![dashboard-video](assets/img/project2_video_dashboard.gif)
+
+## Data Analysis for the Marketing Campaign
+Based on the information and the data analysis I have done so far, it is possible to continue with the marketing analysis for the campaign. First, I focused on the following questions:
+
+1. Who are the top 10 YouTubers with the most subscribers?
+2. Which 3 channels have uploaded the most videos?
+3. Which 3 channels have the most views?
+4. Which 3 channels have the highest average views per video?
+5. Which 3 channels have the highest views per subscriber ratio?
+6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
+
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
+
+## Conclusions
