@@ -304,9 +304,11 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 3    | MrBeast en Español | 394,029.85      |
 
 For this analysis, it is best to prioritise the metrics that are crucial in generating the expected ROI for our marketing team. These metrics are:
-- YouTube channels with the most subscribers
-- Total views
-- Videos uploaded
+- Top 3 YouTube channels with the most subscribers
+- Top 3 YouTube channels with the most total views
+- Top 3 YouTube channels with the most videos uploaded
+
+
    
 
 ## Conclusions
