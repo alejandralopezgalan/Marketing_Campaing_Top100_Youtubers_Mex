@@ -244,16 +244,27 @@ The interactive features of this dashboard:
 Based on the information and the data analysis I have done so far, it is possible to continue with the marketing analysis for the campaign. First, I focused on the following questions:
 
 1. Who are the top 10 YouTubers with the most subscribers?
+
+| Rank   | Channel| Subscribers (M) |
+| :----- |:---| ---:|
+| 1      | Fede Vigevani                                      | 62.3 |
+| 2      | YOLO AVENTURAS                                     | 58.5 |
+| 3      | Badabun                                            | 47.6 |
+| 4      | Kimberly Loaiza                                    | 47.6 |
+| 5      | Juan De Dios Pantoja                               | 47.6 |
+| 6      | Masha y el Oso                                     | 47.6 |
+| 7      | GENIAL                                             | 47.6 |
+| 8      | YOLO                                               | 47.6  |
+| 9      | Susy Mouriz                                        | 47.6 |
+| 10     | BabyBus - Cnaciones Infantiles & Videos para Niños | 47.6 |
+
+
+
+
 2. Which 3 channels have uploaded the most videos?
 3. Which 3 channels have the most views?
 4. Which 3 channels have the highest average views per video?
 5. Which 3 channels have the highest views per subscriber ratio?
 6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
-
-| Left-Aligned  | Center Aligned  | Right Aligned |
-| :------------ |:---------------:| -----:|
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-| zebra stripes | are neat        |    $1 |
 
 ## Conclusions
