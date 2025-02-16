@@ -244,27 +244,58 @@ The interactive features of this dashboard:
 Based on the information and the data analysis I have done so far, it is possible to continue with the marketing analysis for the campaign. First, I focused on the following questions:
 
 1. Who are the top 10 YouTubers with the most subscribers?
-
-| Rank   | Channel| Subscribers (M) |
-| :----- |:---| ---:|
-| 1      | Fede Vigevani                                      | 62.3 |
-| 2      | YOLO AVENTURAS                                     | 58.5 |
-| 3      | Badabun                                            | 47.6 |
-| 4      | Kimberly Loaiza                                    | 47.6 |
-| 5      | Juan De Dios Pantoja                               | 47.6 |
-| 6      | Masha y el Oso                                     | 47.6 |
-| 7      | GENIAL                                             | 47.6 |
-| 8      | YOLO                                               | 47.6  |
-| 9      | Susy Mouriz                                        | 47.6 |
-| 10     | BabyBus - Cnaciones Infantiles & Videos para Niños | 47.6 |
-
-
+| Rank   | Channel                                            | Subscribers (M) |
+| :----- |:-------------------------------------------------- | --------------: |
+| 1      | Fede Vigevani                                      | 62.30           |
+| 2      | YOLO AVENTURAS                                     | 58.50           |
+| 3      | Badabun                                            | 47.60           |
+| 4      | Kimberly Loaiza                                    | 46.30           |
+| 5      | Juan De Dios Pantoja                               | 44.00           |
+| 6      | Masha y el Oso                                     | 39.60           |
+| 7      | GENIAL                                             | 32.00           |
+| 8      | YOLO                                               | 31.90           |
+| 9      | Susy Mouriz                                        | 27.30           |
+| 10     | BabyBus - Canciones Infantiles & Videos para Niños | 26.80           |
 
 
 2. Which 3 channels have uploaded the most videos?
+| Rank | Channel       | Videos Uploaded |
+| :--- |:------------- | --------------: |
+| 1    | Tlnovelas     | 59898           |
+| 2    | Badabun       | 24080           |
+| 3    | Tu COSMOPOLIS | 11926           |
+
+
 3. Which 3 channels have the most views?
+| Rank | Channel        | Total Views (B) |
+| :--- |:-------------- | --------------: |
+| 1    | YOLO AVENTURAS | 20.52           |
+| 2    | Masha y el Oso | 20.26           |
+| 3    | Badabun        | 19.91           |
+
+
 4. Which 3 channels have the highest average views per video?
+  | Rank | Channel             | Total Views (B) |
+| :--- |:--------------------- | --------------: |
+| 1    | Christian Nodal       | 564.02          |
+| 2    | Los Ángeles Azules    | 116.24          |
+| 3    | vicentefernandez&reg; | 87.58           |
+
+
 5. Which 3 channels have the highest views per subscriber ratio?
+| Rank | Channel               | Views per Subscriber |
+| :--- |:--------------------- | -------------------: |
+| 1    | Los Ángeles Azules    | 1,490.62             |
+| 2    | Lizos Music           | 1,433.94             |
+| 3    | vicentefernandez&reg; | 1,316.36             |
+
+   
 6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
+| Rank | Channel            | Videos Uploaded |
+| :--- |:------------------ | --------------: |
+| 1    | Kenia Os           | 1,203,333.33    |
+| 2    | Christian Nodal    | 610,526.32      |
+| 3    | MrBeast en Español | 394,029.85      |
+   
 
 ## Conclusions
