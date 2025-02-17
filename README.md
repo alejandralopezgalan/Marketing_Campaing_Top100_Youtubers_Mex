@@ -34,7 +34,8 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
    - [Analysis in Power BI](#analysis-in-power-bi)
      - [DAX measures](#dax-measures)
      - [Data Visualisation](#data-visualisation)
-  - [Data Analysis for the Marketing Campaign](#data-analysis-for-the-marketing-campaign)
+    - [Data Analysis for the Marketing Campaign](#data-analysis-for-the-marketing-campaign)
+      - 
 - [Conclusions](#conclusions)
 
 ---
@@ -240,7 +241,7 @@ The interactive features of this dashboard:
 
 ![dashboard-video](assets/img/project2_video_dashboard.gif)
 
-## Data Analysis for the Marketing Campaign
+### Data Analysis for the Marketing Campaign
 Based on the information and the data analysis I have done so far, it is possible to continue with the marketing analysis for the campaign. First, I focused on the following questions:
 
 1. Who are the top 10 YouTubers with the most subscribers?
@@ -279,11 +280,11 @@ Based on the information and the data analysis I have done so far, it is possibl
 
 4. Which 3 channels have the highest average views per video?
 
-| Rank | Channel             | Total Views (B) |
-| :--- |:--------------------- | --------------: |
-| 1    | Christian Nodal       | 564.02          |
-| 2    | Los Ángeles Azules    | 116.24          |
-| 3    | vicentefernandez&reg; | 87.58           |
+| Rank | Channel               | Average Views per Video (M) |
+| :--- |:--------------------- | --------------------------: |
+| 1    | Christian Nodal       | 564.02                      |
+| 2    | Los Ángeles Azules    | 116.24                      |
+| 3    | vicentefernandez&reg; | 87.58                       |
 <br />
 
 5. Which 3 channels have the highest views per subscriber ratio?
@@ -297,18 +298,22 @@ Based on the information and the data analysis I have done so far, it is possibl
    
 6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
 
-| Rank | Channel            | Videos Uploaded |
-| :--- |:------------------ | --------------: |
-| 1    | Kenia Os           | 1,203,333.33    |
-| 2    | Christian Nodal    | 610,526.32      |
-| 3    | MrBeast en Español | 394,029.85      |
+| Rank | Channel            | Subscriber Engagement Rate |
+| :--- |:------------------ | -------------------------: |
+| 1    | Kenia Os           | 1,203,333.33               |
+| 2    | Christian Nodal    | 610,526.32                 |
+| 3    | MrBeast en Español | 394,029.85                 |
 
 For this analysis, it is best to prioritise the metrics that are crucial in generating the expected ROI for our marketing team. These metrics are:
 - Top 3 YouTube channels with the most subscribers
 - Top 3 YouTube channels with the most total views
 - Top 3 YouTube channels with the most videos uploaded
 
-
-   
+#### Youtubers with the most subscribers
+| Rank | Channel        | Subscribers | Average Views per Video |
+| :--- |:-------------- | ----------: | -----------------------:| 
+| 1    | Fede Vigevani  | 62.30       | 12,710,000              |
+| 2    | YOLO AVENTURAS | 58.50       | 7,600,000               |
+| 3    | Badabun        | 47.60       | 830,000                 |
 
 ## Conclusions
