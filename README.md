@@ -309,11 +309,20 @@ For this analysis, it is best to prioritise the metrics that are crucial in gene
 - Top 3 YouTube channels with the most total views
 - Top 3 YouTube channels with the most videos uploaded
 
+In the advertisement analysis, the marketing team set a Conversion Rate of 2%, which indicates the proportion of viewers who act after watching the ad on a YouTube video. They also defined a product cost of $5.00 and allocated a campaign budget of $50,000 to compensate the YouTuber.
+
 #### Youtubers with the most subscribers
-| Rank | Channel        | Subscribers | Average Views per Video |
-| :--- |:-------------- | ----------: | -----------------------:| 
-| 1    | Fede Vigevani  | 62.30       | 12,710,000              |
-| 2    | YOLO AVENTURAS | 58.50       | 7,600,000               |
-| 3    | Badabun        | 47.60       | 830,000                 |
+- `Conversion Rate` = 2.00%
+- `Product Cost` = $5.00
+- `Campaign Cost` = $50,000
+
+| Rank | Channel        | Subscribers | Average Views per Video (M) |
+| :--- |:-------------- | ----------: | ---------------------------:| 
+| 1    | Fede Vigevani  | 62.30       | 12.71                       |
+| 2    | YOLO AVENTURAS | 58.50       | 7.60                        |
+| 3    | Badabun        | 47.60       | 0.83                        |
+
+Using the information from the previous table, I calculated the `Potential Product Sales per Video` by multiplying the `Average Views per Video` by the `Conversion Rate`. Then, I multiplied the `Potential Product Sales per Video` by the `Product Cost` to calculate the `Potential Revenue per Video`. Finally the `Net Profit`was the difference between the `Potential Revenue per Video` and the `Campaign Cost`.
+
 
 ## Conclusions
