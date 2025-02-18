@@ -420,19 +420,68 @@ In the advertisement analysis, the marketing team set a Conversion Rate of 2%, w
 - `Product Cost` = $5.00
 - `Campaign Cost` = $50,000
 
-| Rank | Channel        | Subscribers | Average Views per Video (M) |
-| :--- |:-------------- | ----------: | ---------------------------:| 
-| 1    | Fede Vigevani  | 62.30       | 12.71                       |
-| 2    | YOLO AVENTURAS | 58.50       | 7.60                        |
-| 3    | Badabun        | 47.60       | 0.83                        |
+| Rank | Channel        | Subscribers | Rounded Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
+| :--- |:-------------- | ----------: | -----------------------------------:| ------------------------------:| ---------------------------:| ----------:| 
+| 1    | Fede Vigevani  | 62.30       | 12,710,000                          | 254,200                        | 1,271,000                   | 1,221,000  |
+| 2    | YOLO AVENTURAS | 58.50       | 7,600,000                           | 152,000                        | 760,000                     | 710,000    |
+| 3    | Badabun        | 47.60       | 830,000                             | 16,00                          | 83,000                      | 33,000     |
 
-Using the information from the previous table, I calculated the `Potential Product Sales per Video` by multiplying the `Average Views per Video` by the `Conversion Rate`. Then, I multiplied the `Potential Product Sales per Video` by the `Product Cost` to calculate the `Potential Revenue per Video`. Finally the `Net Profit`was the difference between the `Potential Revenue per Video` and the `Campaign Cost`. The SQL code for this calculations are as follows:
+I calculated the `Potential Product Sales per Video` by multiplying the `Average Views per Video` by the `Conversion Rate`. Then, I multiplied the `Potential Product Sales per Video` by the `Product Cost` to calculate the `Potential Revenue per Video`. Finally the `Net Profit`was the difference between the `Potential Revenue per Video` and the `Campaign Cost`. The SQL code for this calculations are as follows:
 
 ```sql  
-TotalVideos =
-  VAR totalvideos = SUM(mx_youtubers_data2024[total_videos])
+-- Marketing campaign analysis
+-- Declare the variables using a temporary table
+DROP TABLE IF EXISTS temp_variables;
 
-  RETURN totalvideos
+CREATE TEMP TABLE temp_var (
+    varname text,
+    varvalue float
+);
+
+-- Adding the values into the temporary table
+INSERT INTO temp_var (varname, varvalue) VALUES 
+    ('conversionRate', 0.02),  -- The conversion rate @ 2%
+    ('productCost', 5.0),      -- The product cost @ $5
+    ('campaignCost', 50000.0); -- The campaign cost @ $50,000
+
+
+-- Check if the values and variables are correct
+SELECT *
+FROM temp_var;
+	
+
+-- Define the CTE (Common Table Expression) to calculate the rounded average views per video
+WITH ChannelData AS (
+    SELECT 
+        channel_name,
+        total_views,
+        total_videos,
+        ROUND((total_views::NUMERIC / total_videos), -4) AS rounded_avg_views_video
+    FROM 
+        mexicans_youtubers
+)
+
+-- Select and calculate the required fields
+SELECT 
+    channel_name,
+    rounded_avg_views_video,
+    (rounded_avg_views_video * 
+		(SELECT varvalue FROM temp_var WHERE varname = 'conversionRate')) AS potential_units_sold_per_video, 
+    (rounded_avg_views_video * 
+		(SELECT varvalue FROM temp_var WHERE varname = 'conversionRate') * 
+			(SELECT varvalue FROM temp_var WHERE varname = 'productCost')) AS potential_revenue_per_video,
+    ((rounded_avg_views_video * (SELECT varvalue FROM temp_var WHERE varname = 'conversionRate') 
+		* (SELECT varvalue FROM temp_var WHERE varname = 'productCost')) - 
+			(SELECT varvalue FROM temp_var WHERE varname = 'campaignCost')) AS net_profit
+FROM 
+    ChannelData
+WHERE 
+    channel_name IN ('Fede Vigevani', 'YOLO AVENTURAS', 'Badabun') -- Youtubers with the most subscribers 
+ORDER BY
+    net_profit DESC; -- Order by net profit descending
 ```
+
+
+
 
 ## Conclusions
