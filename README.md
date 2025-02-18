@@ -25,17 +25,20 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
 - [Introduction](#introduction)
   - [Business Problem](#business-problem)
   - [Goals](#goals)
- - [Methodology](#methodology)
-   - [Data Source](#data-source)
-   - [Tools](#tools)
-   - [Data Cleaning](#data-cleaning)
-   - [Extracting data from YouTube](extracting-data-from-youtube)
-   - [Data Transformation in SQL](#data-transformation-in-sql)
-   - [Analysis in Power BI](#analysis-in-power-bi)
-     - [DAX measures](#dax-measures)
-     - [Data Visualisation](#data-visualisation)
-    - [Data Analysis for the Marketing Campaign](#data-analysis-for-the-marketing-campaign)
-      - 
+- [Methodology](#methodology)
+  - [Data Source](#data-source)
+  - [Tools](#tools)
+  - [Data Cleaning](#data-cleaning)
+  - [Extracting data from YouTube](extracting-data-from-youtube)
+  - [Data Transformation in SQL](#data-transformation-in-sql)
+  - [Analysis in Power BI](#analysis-in-power-bi)
+    - [DAX measures](#dax-measures)
+    - [Data Visualisation](#data-visualisation)
+  - [Data Analysis for the Marketing Campaign](#data-analysis-for-the-marketing-campaign)
+    - [YouTubers with the most subscribers](#youtubers-with-the-most-subscribers)
+    - [YouTubers with the most total views](#youtubers-with-the-most-total-views)
+    - [YouTubers with the most videos uploaded](#youtubers-with-the-most-videos-uploaded)
+- [Insights and Recommendations](#insights-and-recommendations)
 - [Conclusions](#conclusions)
 
 ---
@@ -415,16 +418,16 @@ For this analysis, it is best to prioritise the metrics that are crucial in gene
 
 In the advertisement analysis, the marketing team set a Conversion Rate of 2%, which indicates the proportion of viewers who act after watching the ad on a YouTube video. They also defined a product cost of $5.00 and allocated a campaign budget of $50,000 to compensate the YouTuber.
 
-#### Youtubers with the most subscribers
+#### YouTubers with the most subscribers
 - `Conversion Rate` = 2.00%
 - `Product Cost` = $5.00
 - `Campaign Cost` = $50,000
 
-| Rank | Channel        | Total Subscribers | Rounded Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
-| :--- |:-------------- | ----------------: | -----------------------------------:| ------------------------------:| ---------------------------:| ----------:| 
-| 1    | Fede Vigevani  | 62,300,000        | 12,710,000                          | 254,200                        | 1,271,000                   | 1,221,000  |
-| 2    | YOLO AVENTURAS | 58,500,000        | 7,600,000                           | 152,000                        | 760,000                     | 710,000    |
-| 3    | Badabun        | 47,600,000        | 830,000                             | 16,00                          | 83,000                      | 33,000     |
+| Rank | Channel | Total Subscribers | Rounded Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
+| :--- |:------- | --------: | -------:| --------:| -----------:| ----------:| 
+| 1 | Fede Vigevani | 62,300,000 | 12,710,000 | 254,200 | 1,271,000 | 1,221,000 |
+| 2 | YOLO AVENTURAS | 58,500,000 | 7,600,000 | 152,000 | 760,000 | 710,000    |
+| 3 | Badabun | 47,600,000 | 830,000 | 16,600 | 83,000 | 33,000 |
 
 I calculated the `Potential Product Sales per Video` by multiplying the `Average Views per Video` by the `Conversion Rate`. Then, I multiplied the `Potential Product Sales per Video` by the `Product Cost` to calculate the `Potential Revenue per Video`. Finally the `Net Profit`was the difference between the `Potential Revenue per Video` and the `Campaign Cost`. The SQL code for this calculations are as follows:
 
@@ -488,13 +491,29 @@ Using the previous SQL code as a base, I calculated the same variables for the Y
 - `Product Cost` = $5.00
 - `Campaign Cost` = $50,000
 
-| Rank | Channel        | Total Views | Rounded Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
-| :--- |:-------------- | ----------: | -----------------------------------:| ------------------------------:| ---------------------------:| ----------:| 
-| 1    | YOLO AVENTURAS |        | 12,710,000                          | 254,200                        | 1,271,000                   | 1,221,000  |
-| 2    |  | 58.50       |                            | 152,000                        | 760,000                     | 710,000    |
-| 3    | Badabun        |        | 830,000                             | 16,00                          | 83,000                      | 33,000     |
+| Rank | Channel | Total Views | Rounded Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
+| :--- |:--------- | --------: | ------------:| --------------:| ----------:| -------:| 
+| 1 | Masha y el Oso | 20,262,996,461 | 12,160,000 | 243,200 | 1,216,000 | 1,166,000 |
+| 2 | YOLO AVENTURAS | 20,524,794,143 | 7,600,000 | 152,000 | 760,000 | 710,000 |
+| 3 | Badabun | 19,911,915,821 | 830,000 | 16,600 | 83,000 | 33,000 |
+
+#### YouTubers with the most videos uploaded
+Finally, the results for the YouTube channels with the most videos uploaded were:
+
+- `Conversion Rate` = 2.00%
+- `Product Cost` = $5.00
+- `Campaign Cost` = $50,000
+
+| Rank | Channel | Total Videos | Rounded Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
+| :--- |:------ | ----: | -------:| -----------:| ----------:| ----------:| 
+| 1 | Badabun | 24,080 | 830,000 | 16,600 | 83,000 | 33,000 |
+| 2 | Tu COSMOPOLIS | 11,926 | 440,000 | 8,800 | 44,000 | -6,000 |
+| 3 | Tlnovelas | 59,898 | 320,000 | 6,400 | 32,000 | -18,000 |
 
 
+## Insights and Recommendations
+The YouTube landscape in Mexico is dominated by a variety of popular channels, each excelling in different aspects. Fede Vigevani, YOLO AVENTURAS, and Badabun are the channels with the highest number of subscribers, alluring a vast audience with their engaging content. When it comes to the volume of videos uploaded, Badabun leads, followed by Tlnovelas and Tu COSMOPOLIS, showcasing their dedication to consistently providing fresh content. Meanwhile, channels like Masha y el Oso, YOLO AVENTURAS, and Badabun are celebrated for their popularity and video views, demonstrating their widespread appeal and influence in the region. This mix of channels highlights the diverse tastes and preferences of the Mexican YouTube audience.
 
+Fede Vigevani is the best YouTube channel to collaborate with if we want to maximise visbility because this channel has the most YouTube subscribers in Mexico. 
 
 ## Conclusions
