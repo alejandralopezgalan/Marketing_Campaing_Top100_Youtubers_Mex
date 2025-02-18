@@ -38,8 +38,8 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
     - [YouTubers with the most subscribers](#youtubers-with-the-most-subscribers)
     - [YouTubers with the most total views](#youtubers-with-the-most-total-views)
     - [YouTubers with the most videos uploaded](#youtubers-with-the-most-videos-uploaded)
-- [Insights and Recommendations](#insights-and-recommendations)
-- [Conclusions](#conclusions)
+- [Insights](#insights)
+
 
 ---
 ## Executive Summary
@@ -511,9 +511,10 @@ Finally, the results for the YouTube channels with the most videos uploaded were
 | 3 | Tlnovelas | 59,898 | 320,000 | 6,400 | 32,000 | -18,000 |
 
 
-## Insights and Recommendations
+## Insights
 The YouTube landscape in Mexico is dominated by a variety of popular channels, each excelling in different aspects. Fede Vigevani, YOLO AVENTURAS, and Badabun are the channels with the highest number of subscribers, alluring a vast audience with their engaging content. When it comes to the volume of videos uploaded, Badabun leads, followed by Tlnovelas and Tu COSMOPOLIS, showcasing their dedication to consistently providing fresh content. Meanwhile, channels like Masha y el Oso, YOLO AVENTURAS, and Badabun are celebrated for their popularity and video views, demonstrating their widespread appeal and influence in the region. This mix of channels highlights the diverse tastes and preferences of the Mexican YouTube audience.
 
 Fede Vigevani is the best YouTube channel to collaborate with if we want to maximise visbility because this channel has the most YouTube subscribers in Mexico. 
+Although GRM Daily, Man City and Yogcasts are regular publishers on YouTube, it may be worth considering whether collaborating with them with the current budget caps are worth the effort, as the potential return on investments is significantly lower compared to the other channels.
 
 ## Conclusions
