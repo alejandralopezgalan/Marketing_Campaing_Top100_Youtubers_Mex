@@ -237,6 +237,11 @@ CREATE TABLE mexicans_youtubers AS
  		total_videos
  	FROM
  		youtube_mx;
+
+-- Review the table
+SELECT *
+FROM mexicans_youtubers
+LIMIT 10;
    ```  
 
 
