@@ -420,11 +420,11 @@ In the advertisement analysis, the marketing team set a Conversion Rate of 2%, w
 - `Product Cost` = $5.00
 - `Campaign Cost` = $50,000
 
-| Rank | Channel        | Subscribers | Rounded Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
-| :--- |:-------------- | ----------: | -----------------------------------:| ------------------------------:| ---------------------------:| ----------:| 
-| 1    | Fede Vigevani  | 62.30       | 12,710,000                          | 254,200                        | 1,271,000                   | 1,221,000  |
-| 2    | YOLO AVENTURAS | 58.50       | 7,600,000                           | 152,000                        | 760,000                     | 710,000    |
-| 3    | Badabun        | 47.60       | 830,000                             | 16,00                          | 83,000                      | 33,000     |
+| Rank | Channel        | Total Subscribers | Rounded Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
+| :--- |:-------------- | ----------------: | -----------------------------------:| ------------------------------:| ---------------------------:| ----------:| 
+| 1    | Fede Vigevani  | 62,300,000        | 12,710,000                          | 254,200                        | 1,271,000                   | 1,221,000  |
+| 2    | YOLO AVENTURAS | 58,500,000        | 7,600,000                           | 152,000                        | 760,000                     | 710,000    |
+| 3    | Badabun        | 47,600,000        | 830,000                             | 16,00                          | 83,000                      | 33,000     |
 
 I calculated the `Potential Product Sales per Video` by multiplying the `Average Views per Video` by the `Conversion Rate`. Then, I multiplied the `Potential Product Sales per Video` by the `Product Cost` to calculate the `Potential Revenue per Video`. Finally the `Net Profit`was the difference between the `Potential Revenue per Video` and the `Campaign Cost`. The SQL code for this calculations are as follows:
 
@@ -433,7 +433,7 @@ I calculated the `Potential Product Sales per Video` by multiplying the `Average
 -- Declare the variables using a temporary table
 DROP TABLE IF EXISTS temp_variables;
 
-CREATE TEMP TABLE temp_var (
+CREATE TABLE temp_var (
     varname text,
     varvalue float
 );
@@ -444,16 +444,15 @@ INSERT INTO temp_var (varname, varvalue) VALUES
     ('productCost', 5.0),      -- The product cost @ $5
     ('campaignCost', 50000.0); -- The campaign cost @ $50,000
 
-
 -- Check if the values and variables are correct
 SELECT *
 FROM temp_var;
-	
 
 -- Define the CTE (Common Table Expression) to calculate the rounded average views per video
 WITH ChannelData AS (
     SELECT 
-        channel_name,
+        total_subscribers,
+		channel_name,
         total_views,
         total_videos,
         ROUND((total_views::NUMERIC / total_videos), -4) AS rounded_avg_views_video
@@ -464,8 +463,9 @@ WITH ChannelData AS (
 -- Select and calculate the required fields
 SELECT 
     channel_name,
-    rounded_avg_views_video,
-    (rounded_avg_views_video * 
+    total_subscribers,
+	rounded_avg_views_video,
+	(rounded_avg_views_video * 
 		(SELECT varvalue FROM temp_var WHERE varname = 'conversionRate')) AS potential_units_sold_per_video, 
     (rounded_avg_views_video * 
 		(SELECT varvalue FROM temp_var WHERE varname = 'conversionRate') * 
@@ -480,6 +480,19 @@ WHERE
 ORDER BY
     net_profit DESC; -- Order by net profit descending
 ```
+
+#### YouTubers with the most total views
+Using the previous SQL code as a base, I calculated the same variables for the YouTube channels with most total views
+
+- `Conversion Rate` = 2.00%
+- `Product Cost` = $5.00
+- `Campaign Cost` = $50,000
+
+| Rank | Channel        | Total Views | Rounded Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
+| :--- |:-------------- | ----------: | -----------------------------------:| ------------------------------:| ---------------------------:| ----------:| 
+| 1    | YOLO AVENTURAS |        | 12,710,000                          | 254,200                        | 1,271,000                   | 1,221,000  |
+| 2    |  | 58.50       |                            | 152,000                        | 760,000                     | 710,000    |
+| 3    | Badabun        |        | 830,000                             | 16,00                          | 83,000                      | 33,000     |
 
 
 
