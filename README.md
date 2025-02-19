@@ -510,7 +510,6 @@ Using a similar approach, I calculated the variables for the YouTube channels wi
 | 2 | YOLO AVENTURAS | 20,524,794,143 | 7,600,000 | 152,000 | 760,000 | 705,000 |
 | 3 | Badabun | 19,911,915,821 | 830,000 | 16,600 | 83,000 | 28,000 |
 
-**SQL code**
 
 #### YouTubers with the most videos uploaded
 Finally, the results for the YouTube channels with the most videos uploaded were:
@@ -526,8 +525,6 @@ Finally, the results for the YouTube channels with the most videos uploaded were
 | 2 | Tu COSMOPOLIS | 11,926 | 440,000 | 8,800 | 44,000 | -86,000 |
 | 3 | Tlnovelas | 59,898 | 320,000 | 6,400 | 32,000 | -98,000 |
 
-**SQL code**
-
 ## Insights
 The YouTube landscape in Mexico is dominated by a variety of popular channels, each excelling in different aspects. Fede Vigevani, YOLO AVENTURAS, and Badabun are the channels with the highest number of subscribers, alluring a vast audience with their engaging content. 
 
@@ -538,7 +535,7 @@ Fede Vigevani is the best YouTube channel to collaborate with if we want to maxi
 The top 3 channels to form collaborations with are Fede Vigevani, Masha y el Oso, and YOLO AVENTURAS based on this analysis, because they attract the most engagement on their channels consistently.
 
 ### Potential Return on Investment
-- Setting up a collaboration deal with Fede Vigevani would make a net profit of $1,221,000 per video. 
+- Setting up a Product Placement Collaboration with Fede Vigevani would make a net profit of $1,221,000 per video. 
 - An influencer marketing contract with Masha y el Oso can generate a net profit of $1,166,000 per video.
 - A product placement campaign with YOLO AVENTURAS could generate approximately $710,000 per video. 
 NoCopyrightSounds could profit the client $642,000 per video too (which is worth considering)
