@@ -40,8 +40,7 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
     - [YouTubers with the most videos uploaded](#youtubers-with-the-most-videos-uploaded)
 - [Insights](#insights)
     - [Potential Return on Investment](#potential-return-on-investment)
-	 
-
+-[Action Plan](#action-plan)	 
 
 ---
 ## Executive Summary
@@ -540,11 +539,9 @@ The top 3 channels to form collaborations with are Fede Vigevani, Masha y el Oso
 - A sponsored video series with YOLO AVENTURAS could generate approximately $705,000 per video, but a product placement campaign with them could generate $710,000 per video.
 - An influencer marketing campaing with the YouTube channels with the most videos uploaded is not recommended, as no positive profit would be generated using this approach.
 
-### Action plan
+## Action plan
 Based on this analysis, the best YouTube channel to advance a long-term partnership deal to promote our products is Fede Vigevani. Our plan is to:
 1. Reach out to the team behind Fede Vigevani YouTube channel. The marketing team can negotiate contracts within the budgets allocated to each marketing campaign.
 2. Kick off the campaigns and track their performances against the KPIs
 3. Review how the campaigns progress, gather insights, and optimise based on feedback from converted customers and each channel's audiences.
 4. Advanced potential partnerships with other influencer in the future, such as Masha y el Oso, and YOLO AVENTURAS.
-
-## Conclusions
