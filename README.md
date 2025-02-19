@@ -437,24 +437,30 @@ I calculated the `Potential Product Sales per Video` by multiplying the `Average
 
 **SQL code**
 ```sql  
--- Marketing campaign analysis
+-- Advertisement campaign analysis
+-- YouTube Channels with the most subscribers
+-- Campaign idea: product placement
 -- Declare the variables using a temporary table
-DROP TABLE IF EXISTS temp_variables;
+DROP TABLE IF EXISTS variables;
 
-CREATE TABLE temp_var (
+CREATE TABLE variables (
     varname text,
     varvalue float
 );
 
 -- Adding the values into the temporary table
-INSERT INTO temp_var (varname, varvalue) VALUES 
+INSERT INTO variables (varname, varvalue) VALUES 
     ('conversionRate', 0.02),  -- The conversion rate @ 2%
     ('productCost', 5.0),      -- The product cost @ $5
-    ('campaignCost', 50000.0); -- The campaign cost @ $50,000
+    ('ProductPlacementCost', 50000.0), -- The cost for a product placemente campaign is $50,000
+	('SponsoredVideosCost', 55000.0), -- The cost for a sponsored videos campaign is $55,000
+	('InfluencerContractCost', 55000.0); -- The cost for a sponsored videos campaign is $55,000
+
 
 -- Check if the values and variables are correct
 SELECT *
-FROM temp_var;
+FROM variables;
+	
 
 -- Define the CTE (Common Table Expression) to calculate the rounded average views per video
 WITH ChannelData AS (
@@ -463,7 +469,7 @@ WITH ChannelData AS (
 		channel_name,
         total_views,
         total_videos,
-        ROUND((total_views::NUMERIC / total_videos), -4) AS rounded_avg_views_video
+        ROUND((total_views::NUMERIC / total_videos), -4) AS avg_views_video
     FROM 
         mexicans_youtubers
 )
@@ -472,21 +478,22 @@ WITH ChannelData AS (
 SELECT 
     channel_name,
     total_subscribers,
-	rounded_avg_views_video,
-	(rounded_avg_views_video * 
-		(SELECT varvalue FROM temp_var WHERE varname = 'conversionRate')) AS potential_units_sold_per_video, 
-    (rounded_avg_views_video * 
-		(SELECT varvalue FROM temp_var WHERE varname = 'conversionRate') * 
-			(SELECT varvalue FROM temp_var WHERE varname = 'productCost')) AS potential_revenue_per_video,
-    ((rounded_avg_views_video * (SELECT varvalue FROM temp_var WHERE varname = 'conversionRate') 
-		* (SELECT varvalue FROM temp_var WHERE varname = 'productCost')) - 
-			(SELECT varvalue FROM temp_var WHERE varname = 'campaignCost')) AS net_profit
+	avg_views_video,
+	(avg_views_video * 
+		(SELECT varvalue FROM variables WHERE varname = 'conversionRate')) AS potential_units_sold_per_video, 
+    (avg_views_video * 
+		(SELECT varvalue FROM variables WHERE varname = 'conversionRate') * 
+			(SELECT varvalue FROM variables WHERE varname = 'productCost')) AS potential_revenue_per_video,
+    ((avg_views_video * (SELECT varvalue FROM variables WHERE varname = 'conversionRate') 
+		* (SELECT varvalue FROM variables WHERE varname = 'productCost')) - 
+			(SELECT varvalue FROM variables WHERE varname = 'ProductPlacementCost')) AS net_profit
 FROM 
     ChannelData
 WHERE 
     channel_name IN ('Fede Vigevani', 'YOLO AVENTURAS', 'Badabun') -- Youtubers with the most subscribers 
 ORDER BY
     net_profit DESC; -- Order by net profit descending
+
 ```
 
 #### YouTubers with the most total views
@@ -499,9 +506,9 @@ Using a similar approach, I calculated the variables for the YouTube channels wi
 
 | Rank | Channel | Total Views | Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
 | :--- |:--------- | --------: | ------------:| --------------:| ----------:| -------:| 
-| 1 | Masha y el Oso | 20,262,996,461 | 12,160,000 | 243,200 | 1,216,000 | 1,166,000 |
-| 2 | YOLO AVENTURAS | 20,524,794,143 | 7,600,000 | 152,000 | 760,000 | 710,000 |
-| 3 | Badabun | 19,911,915,821 | 830,000 | 16,600 | 83,000 | 33,000 |
+| 1 | Masha y el Oso | 20,262,996,461 | 12,160,000 | 243,200 | 1,216,000 | 1,161,000 |
+| 2 | YOLO AVENTURAS | 20,524,794,143 | 7,600,000 | 152,000 | 760,000 | 705,000 |
+| 3 | Badabun | 19,911,915,821 | 830,000 | 16,600 | 83,000 | 28,000 |
 
 **SQL code**
 
@@ -515,9 +522,9 @@ Finally, the results for the YouTube channels with the most videos uploaded were
 
 | Rank | Channel | Total Videos | Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
 | :--- |:------ | ----: | -------:| -----------:| ----------:| ----------:| 
-| 1 | Badabun | 24,080 | 830,000 | 16,600 | 83,000 | 33,000 |
-| 2 | Tu COSMOPOLIS | 11,926 | 440,000 | 8,800 | 44,000 | -6,000 |
-| 3 | Tlnovelas | 59,898 | 320,000 | 6,400 | 32,000 | -18,000 |
+| 1 | Badabun | 24,080 | 830,000 | 16,600 | 83,000 | -47,000 |
+| 2 | Tu COSMOPOLIS | 11,926 | 440,000 | 8,800 | 44,000 | -86,000 |
+| 3 | Tlnovelas | 59,898 | 320,000 | 6,400 | 32,000 | -98,000 |
 
 **SQL code**
 
