@@ -40,7 +40,7 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
     - [YouTubers with the most videos uploaded](#youtubers-with-the-most-videos-uploaded)
 - [Insights](#insights)
     - [Potential Return on Investment](#potential-return-on-investment)
--[Action Plan](#action-plan)	 
+- [Action Plan](#action-plan)	 
 
 ---
 ## Executive Summary
