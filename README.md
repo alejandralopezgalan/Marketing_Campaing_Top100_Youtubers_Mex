@@ -423,7 +423,7 @@ In the advertisement analysis, the marketing team set a Conversion Rate of 2%, w
 - `Product Cost` = $5.00
 - `Campaign Cost` = $50,000
 
-| Rank | Channel | Total Subscribers | Rounded Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
+| Rank | Channel | Total Subscribers | Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
 | :--- |:------- | --------: | -------:| --------:| -----------:| ----------:| 
 | 1 | Fede Vigevani | 62,300,000 | 12,710,000 | 254,200 | 1,271,000 | 1,221,000 |
 | 2 | YOLO AVENTURAS | 58,500,000 | 7,600,000 | 152,000 | 760,000 | 710,000    |
@@ -491,7 +491,7 @@ Using the previous SQL code as a base, I calculated the same variables for the Y
 - `Product Cost` = $5.00
 - `Campaign Cost` = $50,000
 
-| Rank | Channel | Total Views | Rounded Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
+| Rank | Channel | Total Views | Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
 | :--- |:--------- | --------: | ------------:| --------------:| ----------:| -------:| 
 | 1 | Masha y el Oso | 20,262,996,461 | 12,160,000 | 243,200 | 1,216,000 | 1,166,000 |
 | 2 | YOLO AVENTURAS | 20,524,794,143 | 7,600,000 | 152,000 | 760,000 | 710,000 |
@@ -504,7 +504,7 @@ Finally, the results for the YouTube channels with the most videos uploaded were
 - `Product Cost` = $5.00
 - `Campaign Cost` = $50,000
 
-| Rank | Channel | Total Videos | Rounded Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
+| Rank | Channel | Total Videos | Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
 | :--- |:------ | ----: | -------:| -----------:| ----------:| ----------:| 
 | 1 | Badabun | 24,080 | 830,000 | 16,600 | 83,000 | 33,000 |
 | 2 | Tu COSMOPOLIS | 11,926 | 440,000 | 8,800 | 44,000 | -6,000 |
@@ -514,7 +514,9 @@ Finally, the results for the YouTube channels with the most videos uploaded were
 ## Insights
 The YouTube landscape in Mexico is dominated by a variety of popular channels, each excelling in different aspects. Fede Vigevani, YOLO AVENTURAS, and Badabun are the channels with the highest number of subscribers, alluring a vast audience with their engaging content. When it comes to the volume of videos uploaded, Badabun leads, followed by Tlnovelas and Tu COSMOPOLIS, showcasing their dedication to consistently providing fresh content. Meanwhile, channels like Masha y el Oso, YOLO AVENTURAS, and Badabun are celebrated for their popularity and video views, demonstrating their widespread appeal and influence in the region. This mix of channels highlights the diverse tastes and preferences of the Mexican YouTube audience.
 
-Fede Vigevani is the best YouTube channel to collaborate with if we want to maximise visbility because this channel has the most YouTube subscribers in Mexico. 
-Although GRM Daily, Man City and Yogcasts are regular publishers on YouTube, it may be worth considering whether collaborating with them with the current budget caps are worth the effort, as the potential return on investments is significantly lower compared to the other channels.
+Fede Vigevani is the best YouTube channel to collaborate with if we want to maximise visbility because this channel has the most YouTube subscribers in Mexico and the higest average views per video. Although Badabun, Tu COSMOPOLIS, and Tlnovelas are regular publishers on YouTube, it may be worth considering whether collaborating with them with the current budget caps are worth the effort, as the potential return on investments is significantly lower and even negative compared to the other channels.
+
+Mister Max is the best YouTuber to collaborate with if we're interested in maximizing reach, but collaborating with DanTDM and Dan Rhodes may be better long-term options considering the fact that they both have large subscriber bases and are averaging significantly high number of views.
+
 
 ## Conclusions
