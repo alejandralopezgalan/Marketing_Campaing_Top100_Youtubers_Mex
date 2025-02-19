@@ -49,18 +49,20 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
 Identify the top YouTubers from Mexico in 2024 to determine which influencers are best suited for running successful marketing campaigns throughout the rest of the year.
 
 ### Solution
-Develop a dashboard to provide insights into the top Mexican YouTubers in 2024, showcasing their **subscriber count, total views, total videos**, and **engagement metrics**. This tool will support the marketing team in making informed decisions about which YouTubers to collaborate with for their campaigns.
+Develop a dashboard to provide insights into the top Mexican YouTubers in 2024, showcasing their subscriber count, total views, total videos, and engagement metrics. This tool will support the marketing team in making informed decisions about which YouTubers to collaborate with for their campaigns.
 
 
 ### Key Findings
-- 
-- a
--
+- Fede Vigevani, YOLO AVENTURAS, and Badabun have the highest number of subscribers, attracting a large audience with their engaging content.
+- Badabun leads in the volume of videos uploaded, followed by Tlnovelas and Tu COSMOPOLIS, demonstrating their commitment to consistently providing fresh content.
+- Channels such as Masha y el Oso, YOLO AVENTURAS, and Badabun are recognised for their popularity and video views, showcasing their widespread influence in the region.
 
 ### Recommendations
--
--
--
+- Collaborate with Fede Vigevani to maximise visibility, as this channel has the most YouTube subscribers in Mexico and the highest average views per video.
+- Consider potential partnerships with Masha y el Oso and YOLO AVENTURAS, as they attract high engagement on their channels consistently.
+- Avoid influencer marketing campaigns with the channels that have the most videos uploaded (Badabun, Tu COSMOPOLIS, and Tlnovelas) due to lower potential return on investment.
+- Reach out to the Fede Vigevani team to negotiate contracts within allocated budgets, kick off campaigns, track performance, review progress, gather insights, and optimise based on feedback from converted customers and each channel's audiences.
+- Explore potential partnerships with other influencers such as Masha y el Oso and YOLO AVENTURAS in the future.
 
 ---
 
