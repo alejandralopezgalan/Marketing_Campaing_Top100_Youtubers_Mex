@@ -39,6 +39,7 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
     - [YouTubers with the most total views](#youtubers-with-the-most-total-views)
     - [YouTubers with the most videos uploaded](#youtubers-with-the-most-videos-uploaded)
 - [Insights](#insights)
+    - [Collaboration Recommendations](#collaboration-recommendations)
     - [Potential Return on Investment](#potential-return-on-investment)
 - [Action Plan](#action-plan)	 
 
@@ -525,23 +526,24 @@ Finally, the results for the YouTube channels with the most videos uploaded were
 | 3 | Tlnovelas | 59,898 | 320,000 | 6,400 | 32,000 | -98,000 |
 
 ## Insights
-The YouTube landscape in Mexico is dominated by a variety of popular channels, each excelling in different aspects. Fede Vigevani, YOLO AVENTURAS, and Badabun are the channels with the highest number of subscribers, alluring a vast audience with their engaging content. 
+The YouTube landscape in Mexico is dominated by a variety of popular channels, each excelling in different aspects. Fede Vigevani, YOLO AVENTURAS, and Badabun are the channels with the highest number of subscribers, alluring a vast audience with their engaging content.
 
 When it comes to the volume of videos uploaded, Badabun leads, followed by Tlnovelas and Tu COSMOPOLIS, showcasing their dedication to consistently providing fresh content. Meanwhile, channels like Masha y el Oso, YOLO AVENTURAS, and Badabun are celebrated for their popularity and video views, demonstrating their widespread influence in the region. This mix of channels highlights the diverse tastes and preferences of the Mexican YouTube audience.
 
-Fede Vigevani is the best YouTube channel to collaborate with if we want to maximise visbility because this channel has the most YouTube subscribers in Mexico and the higest average views per video. Although Badabun, Tu COSMOPOLIS, and Tlnovelas are regular publishers on YouTube, it may be worth considering whether collaborating with them with the current budget caps are worth the effort, as the potential return on investments is significantly lower and even negative compared to the other channels.
+### Collaboration Recommendations
+Fede Vigevani is the best YouTube channel to collaborate with if we want to maximize visibility because this channel has the most YouTube subscribers in Mexico and the highest average views per video. Although Badabun, Tu COSMOPOLIS, and Tlnovelas are regular publishers on YouTube, it may be worth considering whether collaborating with them within the current budget caps is worth the effort, as the potential return on investments is significantly lower and even negative compared to the other channels.
 
 The top 3 channels to form collaborations with are Fede Vigevani, Masha y el Oso, and YOLO AVENTURAS based on this analysis, because they attract the most engagement on their channels consistently.
 
 ### Potential Return on Investment
-- Setting up a Product Placement Collaboration with Fede Vigevani would make a net profit of $1,221,000 per video. 
-- An sponsored video series contract with Masha y el Oso can generate a net profit of $1,161,000 per video.
+- Setting up a product placement collaboration with Fede Vigevani would make a net profit of $1,221,000 per video.
+- A sponsored video series contract with Masha y el Oso can generate a net profit of $1,161,000 per video.
 - A sponsored video series with YOLO AVENTURAS could generate approximately $705,000 per video, but a product placement campaign with them could generate $710,000 per video.
-- An influencer marketing campaing with the YouTube channels with the most videos uploaded is not recommended, as no positive profit would be generated using this approach.
+- An influencer marketing campaign with the YouTube channels with the most videos uploaded is not recommended, as no positive profit would be generated using this approach.
 
 ## Action plan
 Based on this analysis, the best YouTube channel to advance a long-term partnership deal to promote our products is Fede Vigevani. Our plan is to:
-1. Reach out to the team behind Fede Vigevani YouTube channel. The marketing team can negotiate contracts within the budgets allocated to each marketing campaign.
-2. Kick off the campaigns and track their performances against the KPIs
-3. Review how the campaigns progress, gather insights, and optimise based on feedback from converted customers and each channel's audiences.
-4. Advanced potential partnerships with other influencer in the future, such as Masha y el Oso, and YOLO AVENTURAS.
+1. Reach out to the team behind the Fede Vigevani YouTube channel. The marketing team can negotiate contracts within the budgets allocated to each marketing campaign.
+2. Kick off the campaigns and track their performances against the KPIs.
+3. Review how the campaigns progress, gather insights, and optimize based on feedback from converted customers and each channel's audiences.
+4. Consider potential partnerships with other influencers in the future, such as Masha y el Oso and YOLO AVENTURAS.
