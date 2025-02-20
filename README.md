@@ -43,7 +43,7 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
     - [Potential Return on Investment](#potential-return-on-investment)
 - [Action Plan](#action-plan)	 
 
----
+
 ## Executive Summary
 ### Primary Goal
 Identify the top YouTubers from Mexico in 2024 to determine which influencers are best suited for running successful marketing campaigns throughout the rest of the year.
@@ -64,8 +64,6 @@ Develop a dashboard to provide insights into the top Mexican YouTubers in 2024, 
 - Reach out to the Fede Vigevani team to negotiate contracts within allocated budgets, kick off campaigns, track performance, review progress, gather insights, and optimise based on feedback from converted customers and each channel's audiences.
 - Explore potential partnerships with other influencers such as Masha y el Oso and YOLO AVENTURAS in the future.
 
----
-
 ## Introduction
 
 ### Business Problem
@@ -78,7 +76,6 @@ The marketing team needs to identify and collaborate with the most influential M
 4. Support Informed Decision-Making: Equip the marketing team with actionable insights to identify the best YouTubers for collaboration.
 5. Customisable Features: Allow for customisable views and filters within the dashboard to cater to the specific needs and preferences of the marketing team.
 
----
 ## Methodology
 
 ### Data source
@@ -549,3 +546,6 @@ Based on this analysis, the best YouTube channel to advance a long-term partners
 2. Kick off the campaigns and track their performances against the KPIs.
 3. Review how the campaigns progress, gather insights, and optimize based on feedback from converted customers and each channel's audiences.
 4. Consider potential partnerships with other influencers in the future, such as Masha y el Oso and YOLO AVENTURAS.
+
+## PowerBi Report
+To review the analysis in detail, you can download the Power BI Report [here](https://github.com/alejandralopezgalan/top_100_youtubers_mex/blob/main/assets/report/mx_youtubers_2024report.pbix).
