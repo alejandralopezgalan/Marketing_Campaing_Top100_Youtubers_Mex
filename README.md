@@ -7,7 +7,7 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
 
 > **Note**
 >
-> This project was inspired and guided by the work of Stephen David William on [GitHub](https://github.com/sdw-online), wwhose data portfolio project provided invaluable insights and direction. I deeply appreciate the effort and dedication Stephen put into creating such a comprehensive resource.
+> This project was inspired and guided by the work of Stephen David William on [GitHub](https://github.com/sdw-online), whose data portfolio project provided invaluable insights and direction. I deeply appreciate the effort and dedication Stephen put into creating such a comprehensive resource.
 >
 > Original Project:
 > 
