@@ -85,7 +85,7 @@ The marketing team needs to identify and collaborate with the most influential M
 
 The dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/bhavyadhingra00020/top-100-social-media-influencers-2024-countrywise?resource=download). To view the CSV file, click [here](assets/data/youtube_data_mexico.csv).
 
-his dataset provides structured information about the top 100 YouTubers from Mexico in 2024. Each entry represents a YouTuber and includes the following attributes:
+This dataset provides structured information about the top 100 YouTubers from Mexico in 2024. Each entry represents a YouTuber and includes the following attributes:
 
 | Column name | Description | 
 | :--- | :--- |
@@ -95,40 +95,42 @@ his dataset provides structured information about the top 100 YouTubers from Mex
 | `ER` | Engagement Rate: The level of interaction that the influencer's content receives from users on social media platforms, expressed as a percentage |
 | `COUNTRY` | The geographical location or country where the YouTuber is based or primarily operates |
 | `TOPIC OF INFLUENCE` | The niche or category in which the YouTuber specialises or creates content, such as fashion, beauty, technology, fitness, etc. |
-| `POTENTIAL REACH` | TThe estimated number of people who could see a YouTube video or campaign from this influencer |
+| `POTENTIAL REACH` | The estimated number of people who could see a YouTube video or campaign from this influencer |
 
 ### Tools
-- Excel: To explore the data
-- PostgreSQL: To clean, test, and analyse the data
-- Power BI: To visualise the data via interactive dashboards
-- GitHub: To host the project documentation and version control
+- Excel: To explore the data.
+- PostgreSQL: To clean, test, and analyse the data.
+- Power BI: To visualise the data via interactive dashboards.
+- GitHub: To host the project documentation and version control.
 
 ### Data Cleaning
 Displayed below is a screenshot of a portion of the data presented in Excel.
 
 ![Screenshot_data](assets/img/project2_kaggle_data_original.png)
 
+Review or improve this texto in British English:
 The objective is to refine our dataset, ensuring it is well-structured and primed for analysis.
 
 Criteria for the cleaned data:
-- Retain only the columns that are pertinent.
+- Retain only the pertinent columns.
 - Ensure all data types are suitable for their respective columns.
-- Verify that no column contains null values, guaranteeing completeness of all records.
+- Verify that no column contains null values, guaranteeing the completeness of all records.
 
-After the initial data exploration, I realised that some columns, such as `ER`, `COUNTRY`, and `TOPIC OF INFLUENCE`, are either irrelevant for our analysis or have missing values. Considering our primary goal and the desired solution, the dataset should contain information related to subscriber count, total views, total videos, and engagement metrics. Therefore, I needed to extract this information from YouTube to complement our dataset. I used a Python script to extract that information from YouTube.
+After the initial data exploration, I realised that some columns, such as `ER`, `COUNTRY`, and `TOPIC OF INFLUENCE`, are either irrelevant for our analysis or have missing values. Considering our primary goal and the desired solution, the dataset should contain information related to subscriber count, total views, total videos, and engagement metrics. Therefore, I needed to extract this information from YouTube to complement our dataset. I used a Python script to extract this information from YouTube.
 
+Review or improve this text in British English:
 ### Extracting data from YouTube
 I implemented a Python script based on the script developed by Stephen David William, available on [GitHub]([https://github.com/sdw-online](https://github.com/sdw-online/top_uk_youtubers_2024). To see the script I used, just click [here](assets/script/script_youtube_python.py). 
 
-After running the script, the dataset included four additional columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos`as seen in the following image. However, the script did not extract data from two YouTubers, possibly due to unrecognised channel IDs.
+After running the script, the dataset included four additional columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos` as seen in the following image. However, the script did not extract data from two YouTubers, possibly due to unrecognised channel IDs.
 
 ![updated_data](assets/img/project2_data_updated.png)
 
-The script output found no data on these two channels, even though they actually exist on YouTube. Therefore, I decided to manually enter this data using the information from the 'About' section of these YouTube channels. I added this information at the end of the table, so I could use Excel or SQL to sort the channels by their respective ranks based on	`total_subscribers`,	`total_views` and `total_videos` later on. 
+The script output found no data on these two channels, even though they actually exist on YouTube. Therefore, I decided to manually enter this data using the information from the 'About' section of these YouTube channels. I added this information at the end of the table so I could use Excel or SQL to sort the channels by their respective ranks based on `total_subscribers`,	`total_views` and `total_videos` later on. 
 
 ![script_ouput](assets/img/project2_script_output.png)
 
-For the following steps, I used PostgreSQL. I changed the column names to lowercase with dashes instead of spaces and renamed the column `rank` instead of `#`in Excel before loading the data into SQL. The updated dataset can be found [here](assets/data/updated_youtube_data_mex.csv) and the following image shows a view of this dataset 
+For the following steps, I used PostgreSQL. I changed the column names to lowercase with dashes instead of spaces and renamed the column `rank` instead of `#`n Excel before loading the data into SQL. The updated dataset can be found [here](assets/data/updated_youtube_data_mex.csv) and the following image shows a view of this dataset.
 
 ![for-sql](/assets/img/project2_database_for_sql.png)
 
@@ -137,12 +139,12 @@ I developed a SQL script for data cleaning. For a detailed review of the script,
 1. Create the database.
 2. Create the table to store YouTube data.
 3. Import the data into the newly created table and verify proper loading.
-4. Create a view to simplify the data by selecting specific columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos`.
+4. Create a view to simplify the data by selecting specific columns: `channel_name`, `total_subscribers`, `total_views` and `total_videos`.
 5. Perform data quality checks:
-   - a. Verify the number of rows: Top 100 YouTube channels.
-   - b. Verify the number of columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos`
-   - c. Check the data type of each variable.
-   - d. Check the number of unique channels in the database or count the number of duplicate channels.
+ - a. Verify the number of rows: Top 100 YouTube channels.
+ - b. Verify the number of columns: `channel_name`, `total_subscribers`, `total_views` and `total_videos`
+ - c. Check the data type of each variable.
+ - d. Check the number of unique channels in the database or count the number of duplicate channels.
 6. Create a new table to export the data to a CSV file. To see the output file, click this [link](assets/data/mx_youtubers_data2024.csv).
 
 <img src="assets/img/project2_database_view_sql.png" width="550" height="500" />
