@@ -257,7 +257,7 @@ LIMIT 10;
 ### Analysis in Power BI
 I loaded the CSV file [mx_youtubers_data2024](assets/data/mx_youtubers_data2024.csv) into a Power BI report, and the following image showed that the variables were correctly loaded.
 
-![loaded_data_powerbi](assets/img/prject2_data_loaded-powerbi.png)
+![loaded_data_powerbi](assets/img/project2_data_loaded-powerbi.png)
 
 #### DAX measures
 I constructed a table with all the essential measures for the analysis, employing DAX formulas to develop these metrics.
