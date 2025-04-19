@@ -505,8 +505,8 @@ Using a similar approach, I calculated the variables for the YouTube channels wi
 
 | Rank | Channel | Total Views | Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
 | :--- |:--------- | --------: | ------------:| --------------:| ----------:| -------:| 
-| 1 | Masha y el Oso | 20,262,996,461 | 12,160,000 | 243,200 | 1,216,000 | 1,161,000 |
-| 2 | YOLO AVENTURAS | 20,524,794,143 | 7,600,000 | 152,000 | 760,000 | 705,000 |
+| 1 | YOLO AVENTURAS | 20,524,794,143 | 7,600,000 | 152,000 | 760,000 | 705,000 |
+| 2 | Masha y el Oso | 20,262,996,461 | 12,160,000 | 243,200 | 1,216,000 | 1,161,000 |
 | 3 | Badabun | 19,911,915,821 | 830,000 | 16,600 | 83,000 | 28,000 |
 
 
