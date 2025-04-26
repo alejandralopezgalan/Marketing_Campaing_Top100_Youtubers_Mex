@@ -1,4 +1,3 @@
-
 -- Create the database
 CREATE DATABASE youtube_mx_db;
 
@@ -114,7 +113,6 @@ LIMIT 10;
 YouTube Channels with the most subscribers
 Campaign idea: product placement
 Declare the variables using a temporary table*/
-
 DROP TABLE IF EXISTS variables;
 
 CREATE TABLE variables (
@@ -130,13 +128,13 @@ INSERT INTO variables (varname, varvalue) VALUES
 	('SponsoredVideosCost', 55000.0), -- The cost for a sponsored videos campaign is $55,000
 	('InfluencerContractCost', 130000.0); -- The cost for a sponsored videos campaign is $55,000
 
-
 -- Check if the values and variables are correct
 SELECT *
 FROM variables;
 	
-
--- Define the CTE (Common Table Expression) to calculate the rounded average views per video
+/* YouTube Channels with the most subscribers
+Campaign idea: product placement
+Define the CTE (Common Table Expression) to calculate the rounded average views per video */
 WITH ChannelData AS (
     SELECT 
         total_subscribers,
@@ -202,7 +200,6 @@ WHERE
     channel_name IN ('YOLO AVENTURAS', 'Masha y el Oso','Badabun') -- Youtubers with the most subscribers 
 ORDER BY
     net_profit DESC; -- Order by net profit descending
-
 
 
 /*YouTube Channels with the most videos uploaded
