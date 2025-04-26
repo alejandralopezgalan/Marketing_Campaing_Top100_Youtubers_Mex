@@ -630,4 +630,4 @@ Based on this analysis, the best YouTube channel to advance a long-term partners
 4. Consider potential partnerships with other influencers in the future, such as Masha y el Oso and YOLO AVENTURAS.
 
 ## PowerBi Report
-To review the analysis in detail, you can download the Power BI Report [here](https://github.com/alejandralopezgalan/top_100_youtubers_mex/blob/main/assets/report/mx_youtubers_2024report.pbix).
+To review the analysis in detail, you can download the Power BI Report [here](https://github.com/alejandralopezgalan/top_100_youtubers_mex/blob/main/assets/report/mx_youtubers_2024report.pbix). Please review the bookmarks to visualise the plots associated with the three campaign idea.
