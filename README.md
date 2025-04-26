@@ -494,6 +494,8 @@ ORDER BY
     net_profit DESC; -- Order by net profit descending
 
 ```
+![most_subs](assets/img/project2_most_subs.png)
+
 
 #### YouTubers with the most total views
 Using a similar approach, I calculated the variables for the YouTube channels with most total views
@@ -509,6 +511,44 @@ Using a similar approach, I calculated the variables for the YouTube channels wi
 | 2 | Masha y el Oso | 20,262,996,461 | 12,160,000 | 243,200 | 1,216,000 | 1,161,000 |
 | 3 | Badabun | 19,911,915,821 | 830,000 | 16,600 | 83,000 | 28,000 |
 
+**SQL code**
+```sql  
+/* YouTube Channels with the most total views
+Campaign idea: sponsored video series
+Define the CTE (Common Table Expression) to calculate the rounded average views per video*/
+WITH ChannelData AS (
+    SELECT 
+        total_subscribers,
+		channel_name,
+        total_views,
+        total_videos,
+        ROUND((total_views::NUMERIC / total_videos), -4) AS avg_views_video
+    FROM 
+        mexicans_youtubers
+)
+
+-- Select and calculate the required fields
+SELECT 
+    channel_name,
+    total_views,
+	avg_views_video,
+	(avg_views_video * 
+		(SELECT varvalue FROM variables WHERE varname = 'conversionRate')) AS potential_units_sold_per_video, 
+    (avg_views_video * 
+		(SELECT varvalue FROM variables WHERE varname = 'conversionRate') * 
+			(SELECT varvalue FROM variables WHERE varname = 'productCost')) AS potential_revenue_per_video,
+    ((avg_views_video * (SELECT varvalue FROM variables WHERE varname = 'conversionRate') 
+		* (SELECT varvalue FROM variables WHERE varname = 'productCost')) - 
+			(SELECT varvalue FROM variables WHERE varname = 'SponsoredVideosCost')) AS net_profit
+FROM 
+    ChannelData
+WHERE 
+    channel_name IN ('YOLO AVENTURAS', 'Masha y el Oso','Badabun') -- Youtubers with the most subscribers 
+ORDER BY
+    net_profit DESC; -- Order by net profit descending
+```
+
+![most_views](assets/img/project2_most_views.png)
 
 #### YouTubers with the most videos uploaded
 Finally, the results for the YouTube channels with the most videos uploaded were:
@@ -520,9 +560,51 @@ Finally, the results for the YouTube channels with the most videos uploaded were
 
 | Rank | Channel | Total Videos | Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
 | :--- |:------ | ----: | -------:| -----------:| ----------:| ----------:| 
-| 1 | Badabun | 24,080 | 830,000 | 16,600 | 83,000 | -47,000 |
-| 2 | Tu COSMOPOLIS | 11,926 | 440,000 | 8,800 | 44,000 | -86,000 |
-| 3 | Tlnovelas | 59,898 | 320,000 | 6,400 | 32,000 | -98,000 |
+| 1 | Tlnovelas | 59,898 | 320,000 | 6,400 | 32,000 | -98,000 |
+| 2 | Badabun | 24,080 | 830,000 | 16,600 | 83,000 | -47,000 |
+| 3 | Tu COSMOPOLIS | 11,926 | 440,000 | 8,800 | 44,000 | -86,000 |
+
+
+
+**SQL code**
+```sql  
+/*YouTube Channels with the most videos uploaded
+Campaign idea: Influencer marketing
+Define the CTE (Common Table Expression) to calculate the rounded average views per video */
+WITH ChannelData AS (
+    SELECT 
+        total_subscribers,
+		channel_name,
+        total_views,
+        total_videos,
+        ROUND((total_views::NUMERIC / total_videos), -4) AS avg_views_video
+    FROM 
+        mexicans_youtubers
+)
+
+-- Select and calculate the required fields
+SELECT 
+    channel_name,
+    total_videos,
+	avg_views_video,
+	(avg_views_video * 
+		(SELECT varvalue FROM variables WHERE varname = 'conversionRate')) AS potential_units_sold_per_video, 
+    (avg_views_video * 
+		(SELECT varvalue FROM variables WHERE varname = 'conversionRate') * 
+			(SELECT varvalue FROM variables WHERE varname = 'productCost')) AS potential_revenue_per_video,
+    ((avg_views_video * (SELECT varvalue FROM variables WHERE varname = 'conversionRate') 
+		* (SELECT varvalue FROM variables WHERE varname = 'productCost')) - 
+			(SELECT varvalue FROM variables WHERE varname = 'InfluencerContractCost')) AS net_profit
+FROM 
+    ChannelData
+WHERE 
+    channel_name IN ('Tlnovelas', 'Badabun', 'Tu COSMOPOLIS') -- Youtubers with the most subscribers 
+ORDER BY
+    net_profit DESC; -- Order by net profit descending
+	
+```
+
+![most_videos](assets/img/project2_most_videos.png)
 
 ## Insights
 The YouTube landscape in Mexico is dominated by a variety of popular channels, each excelling in different aspects. Fede Vigevani, YOLO AVENTURAS, and Badabun are the channels with the highest number of subscribers, alluring a vast audience with their engaging content.
@@ -530,7 +612,7 @@ The YouTube landscape in Mexico is dominated by a variety of popular channels, e
 When it comes to the volume of videos uploaded, Badabun leads, followed by Tlnovelas and Tu COSMOPOLIS, showcasing their dedication to consistently providing fresh content. Meanwhile, channels like Masha y el Oso, YOLO AVENTURAS, and Badabun are celebrated for their popularity and video views, demonstrating their widespread influence in the region. This mix of channels highlights the diverse tastes and preferences of the Mexican YouTube audience.
 
 ### Collaboration Recommendations
-Fede Vigevani is the best YouTube channel to collaborate with if we want to maximize visibility because this channel has the most YouTube subscribers in Mexico and the highest average views per video. Although Badabun, Tu COSMOPOLIS, and Tlnovelas are regular publishers on YouTube, it may be worth considering whether collaborating with them within the current budget caps is worth the effort, as the potential return on investments is significantly lower and even negative compared to the other channels.
+Fede Vigevani is the best YouTube channel to collaborate with if we want to maximise visibility because this channel has the most YouTube subscribers in Mexico and the highest average views per video. Although Badabun, Tu COSMOPOLIS, and Tlnovelas are regular publishers on YouTube, it may be worth considering whether collaborating with them within the current budget caps is worth the effort, as the potential return on investments is significantly lower and even negative compared to the other channels.
 
 The top 3 channels to form collaborations with are Fede Vigevani, Masha y el Oso, and YOLO AVENTURAS based on this analysis, because they attract the most engagement on their channels consistently.
 
@@ -544,7 +626,7 @@ The top 3 channels to form collaborations with are Fede Vigevani, Masha y el Oso
 Based on this analysis, the best YouTube channel to advance a long-term partnership deal to promote our products is Fede Vigevani. Our plan is to:
 1. Reach out to the team behind the Fede Vigevani YouTube channel. The marketing team can negotiate contracts within the budgets allocated to each marketing campaign.
 2. Kick off the campaigns and track their performances against the KPIs.
-3. Review how the campaigns progress, gather insights, and optimize based on feedback from converted customers and each channel's audiences.
+3. Review how the campaigns progress, gather insights, and optimise based on feedback from converted customers and each channel's audiences.
 4. Consider potential partnerships with other influencers in the future, such as Masha y el Oso and YOLO AVENTURAS.
 
 ## PowerBi Report
