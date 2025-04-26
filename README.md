@@ -564,8 +564,6 @@ Finally, the results for the YouTube channels with the most videos uploaded were
 | 2 | Badabun | 24,080 | 830,000 | 16,600 | 83,000 | -47,000 |
 | 3 | Tu COSMOPOLIS | 11,926 | 440,000 | 8,800 | 44,000 | -86,000 |
 
-
-
 **SQL code**
 ```sql  
 /*YouTube Channels with the most videos uploaded
