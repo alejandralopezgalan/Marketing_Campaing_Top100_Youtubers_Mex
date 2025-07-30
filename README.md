@@ -20,8 +20,7 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
 - [Executive Summary](#executive-summary)
   - [Primary Goal](#primary-goal)
   - [Solution](#solution)
-  - [Key Findings](#key-findings)
-  - [Recommendations](#recommendations)
+  - [Key Findings and Recommendations](#key-findings-and-recommendations)
 - [Introduction](#introduction)
   - [Business Problem](#business-problem)
   - [Goals](#goals)
@@ -52,17 +51,38 @@ Identify the top YouTubers from Mexico in 2024 to determine which influencers ar
 Develop a dashboard to provide insights into the top Mexican YouTubers in 2024, showcasing their subscriber count, total views, total videos, and engagement metrics. This tool will support the marketing team in making informed decisions about which YouTubers to collaborate with for their campaigns.
 
 
-### Key Findings
-- Fede Vigevani, YOLO AVENTURAS, and Badabun have the highest number of subscribers, attracting a large audience with their engaging content.
-- Badabun leads in the volume of videos uploaded, followed by Tlnovelas and Tu COSMOPOLIS, demonstrating their commitment to consistently providing fresh content.
-- Channels such as Masha y el Oso, YOLO AVENTURAS, and Badabun are recognised for their popularity and video views, showcasing their widespread influence in the region.
+### Key Findings and Recommendations
 
-### Recommendations
-- Collaborate with Fede Vigevani to maximise visibility, as this channel has the most YouTube subscribers in Mexico and the highest average views per video.
-- Consider potential partnerships with Masha y el Oso and YOLO AVENTURAS, as they attract high engagement on their channels consistently.
-- Avoid influencer marketing campaigns with the channels that have the most videos uploaded (Badabun, Tu COSMOPOLIS, and Tlnovelas) due to lower potential return on investment.
-- Reach out to the Fede Vigevani team to negotiate contracts within allocated budgets, kick off campaigns, track performance, review progress, gather insights, and optimise based on feedback from converted customers and each channel's audiences.
-- Explore potential partnerships with other influencers such as Masha y el Oso and YOLO AVENTURAS in the future.
+<table>
+    <thead>
+        <tr>
+            <th>Finding</th>
+            <th>Recommendation</th>
+            <th>Plot</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2>Fede Vigevani, YOLO AVENTURAS, and Badabun have the highest number of subscribers, attracting a large audience with their engaging content. </td>
+            <td>Collaborate with Fede Vigevani to maximise visibility, as this channel has the most YouTube subscribers in Mexico and the highest average views per video.</td>
+            <td><img src="assets/img/project2_finding1.png"></img></td>
+        </tr>
+        <tr>
+            <td> Reach out to the Fede Vigevani team to negotiate contracts within allocated budgets, kick off campaigns, track performance, review progress, gather insights, and optimise based on feedback from converted customers and each channel’s audiences.</td>
+            <td><img src="assets/img/project2_finding2.png"></img></td>
+        </tr>
+        <tr>
+	    <td>Channels such as Masha y el Oso, YOLO AVENTURAS, and Badabun are recognised for their popularity and video views, showcasing their widespread influence in the region. </td>	
+            <td> Consider potential partnerships with Masha y el Oso and YOLO AVENTURAS, as they attract high engagement on their channels consistently.</td>
+            <td><img src="assets/img/project2_finding3.png"></img></td>
+        </tr>
+	<tr>
+            <td>Badabun leads in the volume of videos uploaded, followed by Tlnovelas and Tu COSMOPOLIS, demonstrating their commitment to consistently providing fresh content. </td>
+	    <td> Avoid influencer marketing campaigns with the channels that have the most videos uploaded (Badabun, Tu COSMOPOLIS, and Tlnovelas) due to lower potential return on investment.</td>
+            <td><img src="assets/img/project2_finding4.png"></img> </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Introduction
 
