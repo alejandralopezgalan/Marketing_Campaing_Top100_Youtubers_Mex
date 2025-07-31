@@ -68,7 +68,7 @@ Develop a dashboard to provide insights into the top Mexican YouTubers in 2024, 
             <td><img src="assets/img/project2_finding1.png"></img></td>
         </tr>
         <tr>
-            <td> Reach out to the Fede Vigevani team to negotiate contracts within allocated budgets, kick off campaigns, track performance, review progress, gather insights, and optimise based on feedback from converted customers and each channel’s audiences.</td>
+            <td> Coordinate with the Fede Vigevani team to manage contracts, launch campaigns, track results, and refine strategies based on customer feedback.</td>
             <td><img src="assets/img/project2_finding2.png"></img></td>
         </tr>
         <tr>
