@@ -65,21 +65,21 @@ Develop a dashboard to provide insights into the top Mexican YouTubers in 2024, 
         <tr>
             <td rowspan=2>Fede Vigevani, YOLO AVENTURAS, and Badabun have the highest number of subscribers, attracting a large audience with their engaging content. </td>
             <td>Collaborate with Fede Vigevani to maximise visibility, as this channel has the most YouTube subscribers in Mexico and the highest average views per video.</td>
-            <td><img src="assets/img/project2_finding1.png"></img></td>
+            <td><img src="assets/img/project2_finding1.png"></img><a href="https://github.com/alejandralopezgalan/Marketing_Campaing_Top100_Youtubers_Mex/blob/main/assets/img/project2_finding1.png">Fig.1</a></td>
         </tr>
         <tr>
             <td> Coordinate with the Fede Vigevani team to manage contracts, launch campaigns, track results, and refine strategies based on customer feedback.</td>
-            <td><img src="assets/img/project2_finding2.png"></img></td>
+            <td><img src="assets/img/project2_finding2.png"></img><a href="https://github.com/alejandralopezgalan/Marketing_Campaing_Top100_Youtubers_Mex/blob/main/assets/img/project2_finding2.png">Fig.2</a></td></td>
         </tr>
         <tr>
 	    <td>Channels such as Masha y el Oso, YOLO AVENTURAS, and Badabun are recognised for their popularity and video views, showcasing their widespread influence in the region. </td>	
             <td> Consider potential partnerships with Masha y el Oso and YOLO AVENTURAS, as they attract high engagement on their channels consistently.</td>
-            <td><img src="assets/img/project2_finding3.png"></img></td>
+            <td><img src="assets/img/project2_finding3.png"></img><a href="https://github.com/alejandralopezgalan/Marketing_Campaing_Top100_Youtubers_Mex/blob/main/assets/img/project2_finding3.png">Fig.3</a></td></td>
         </tr>
 	<tr>
             <td>Badabun leads in the volume of videos uploaded, followed by Tlnovelas and Tu COSMOPOLIS, demonstrating their commitment to consistently providing fresh content. </td>
 	    <td> Avoid influencer marketing campaigns with the channels that have the most videos uploaded (Badabun, Tu COSMOPOLIS, and Tlnovelas) due to lower potential return on investment.</td>
-            <td><img src="assets/img/project2_finding4.png"></img> </td>
+            <td><img src="assets/img/project2_finding4.png"></img><a href="https://github.com/alejandralopezgalan/Marketing_Campaing_Top100_Youtubers_Mex/blob/main/assets/img/project2_finding4.png">Fig.4</a></td></td>
         </tr>
     </tbody>
 </table>
